@@ -5,6 +5,15 @@
   --foreground: #171717;
 }
 
+/* Local Helvetica (self-hosted) */
+@font-face {
+  font-family: 'HelveticaLocal';
+  src: url('/fonts/Helvetica.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -23,4 +32,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* helper class applied from layout.tsx to make the whole app use the local Helvetica */
+.helvetica {
+  font-family: 'HelveticaLocal', Helvetica, sans-serif;
 }
