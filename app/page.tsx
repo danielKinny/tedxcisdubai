@@ -76,7 +76,9 @@ export default function Home() {
           <div className="flex flex-row justify-end">
             {/* tickets button */}
             <a
-              href="/registration"
+              rel="noreferrer"
+              target="_blank"
+              href="https://forms.gle/gcMBxQGmNwKZENMd7"
               className="ml-2 mr-8 inline-block uppercase hover:scale-105 transition-transform bg-red-600 hover:bg-red-700 text-white text-md font-bold px-4 py-4 rounded-2xl shadow "
             >
               <ArrowTopRightOnSquareIcon className="inline-block w-5 h-5 mr-2 -mt-1" />
@@ -95,7 +97,7 @@ export default function Home() {
           loop
           className="w-full object-cover h-auto rounded-2xl"
         >
-          <source src="/looky.mp4" type="video/mp4" />
+          <source src="/video.mp4" type="video/mp4" />
         </video>
       </main>
     </div>
