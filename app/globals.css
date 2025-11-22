@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -6,20 +5,10 @@
   --foreground: #171717;
 }
 
-/* Local Helvetica (self-hosted) */
-@font-face {
-  font-family: 'HelveticaLocal';
-  src: url('/fonts/Helvetica.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,12 +21,30 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
 }
 
-/* helper class applied from layout.tsx to make the whole app use the local Helvetica */
-.inter {
-  font-family: 'Inter', sans-serif;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #dc2626, #991b1b);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #b91c1c, #7f1d1d);
 }
 
 /* Custom Animations */
