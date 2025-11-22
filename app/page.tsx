@@ -7,38 +7,9 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-
-// Hook to detect when element is in viewport
-function useInView(options = {}) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isInView, setIsInView] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsInView(true);
-      }
-    }, {
-      threshold: 0.1,
-      ...options,
-    });
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
-  return [ref, isInView] as const;
-}
+import { ParallaxContainer, ParallaxLayer } from "./components/ParallaxContainer";
 
 function AnimatedLogo({ className }: { className?: string }) {
-  // Simple text-based SVG that reveals a red fill from bottom to top on load
   return (
     <svg
       className={`${className ?? ""} block`}
@@ -50,7 +21,6 @@ function AnimatedLogo({ className }: { className?: string }) {
     >
       <defs>
         <clipPath id="clip-reveal">
-          {/* animate with spline easing for a smoother, less linear fill */}
           <rect x="0" y="80" width="300" height="150">
             <animate
               attributeName="y"
@@ -67,7 +37,6 @@ function AnimatedLogo({ className }: { className?: string }) {
         </clipPath>
       </defs>
 
-      {/* white base text centered */}
       <text
         x="50%"
         y="56"
@@ -80,7 +49,6 @@ function AnimatedLogo({ className }: { className?: string }) {
         TEDxCIS
       </text>
 
-      {/* red text revealed by animated clip */}
       <text
         x="50%"
         y="56"
@@ -170,22 +138,15 @@ const internalSpeakers: Speaker[] = [
 ];
 
 const SpeakerArray = ({speakers, label}: {speakers: Speaker[], label: string}) => {
-  const [ref, isInView] = useInView();
-  
   return (
     <div 
-      ref={ref}
-      className={`w-full min-h-50 shadow-2xl py-4 overflow-x-auto whitespace-nowrap mb-10 transition-opacity duration-1000 ${
-        isInView ? 'animate-fade-in-up' : 'opacity-0'
-      }`}
+      className="w-full min-h-50 shadow-2xl py-4 overflow-x-auto whitespace-nowrap mb-10 animate-fade-in-up"
     >
       {speakers.map((speaker, index) => (
         <div
           key={speaker.id}
-          className={`inline-block p-4 hover:scale-110 transition-all duration-500 mx-12 hover:shadow-2xl ${
-            isInView ? 'animate-fade-in-up' : 'opacity-0'
-          }`}
-          style={{ animationDelay: isInView ? `${index * 100}ms` : '0ms' }}
+          className="inline-block p-4 hover:scale-110 transition-all duration-500 mx-12 animate-fade-in-up"
+          style={{ animationDelay: `${index * 100}ms` }}
         >
           <Image
             src={`/${speaker.href}`}
@@ -207,13 +168,6 @@ export default function Home() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
-  
-  // Refs for scroll animations
-  const [aboutRef, aboutInView] = useInView();
-  const [auditoriumRef, auditoriumInView] = useInView();
-  const [speakersHeadingRef, speakersHeadingInView] = useInView();
-  const [registrationRef, registrationInView] = useInView();
-  const [footerRef, footerInView] = useInView();
 
   useEffect(() => {
     setLoading(true);
@@ -235,10 +189,9 @@ export default function Home() {
       </div>
     </div>
   ) : (
-    <div className="bg-white min-h-screen helvetica">
-      <header className="bg-white/30 backdrop-blur-md py-4 relative animate-fade-in-down">
+    <ParallaxContainer className="bg-white min-h-screen helvetica">
+      <header className="bg-white/30 backdrop-blur-md py-4 animate-fade-in-down z-10 sticky top-0">
         <div className="grid grid-cols-[auto_1fr_auto] items-center px-4">
-          {/* left: brand */}
           <div className="flex items-center gap-3 animate-fade-in-left">
             <a
               href="#"
@@ -253,7 +206,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* center: nav links */}
           <nav className="hidden md:flex justify-center w-full animate-fade-in">
             <ul className="flex gap-8 uppercase text-sm tracking-wider items-center">
               {NAV_LINKS.map((label, index) => (
@@ -271,7 +223,6 @@ export default function Home() {
             </ul>
           </nav>
 
-          {/* right: tickets button + mobile hamburger */}
           <div className="flex flex-row justify-end items-center animate-fade-in-right">
             <button
               onClick={() => setMobileOpen(true)}
@@ -294,7 +245,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* mobile menu overlay */}
         {mobileOpen && (
           <div className="md:hidden fixed inset-0 z-50 bg-white p-6 overflow-auto animate-fade-in">
             <div className="flex items-center justify-between animate-fade-in-down">
@@ -346,127 +296,152 @@ export default function Home() {
       </header>
 
       <main className="max-w-8xl pb-10 helvetica px-8">
-        <div>
-          <video
-            ref={videoRef}
-            autoPlay
-            muted
-            playsInline
-            loop
-            className="w-full object-cover h-auto rounded-2xl shadow-lg transition-opacity duration-1000"
+        <ParallaxLayer speed={0.3}>
+          <div>
+            <video
+              ref={videoRef}
+              autoPlay
+              muted
+              playsInline
+              loop
+              className="w-full object-cover h-auto rounded-2xl shadow-lg transition-opacity duration-1000"
+            >
+              <source src="/video.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </ParallaxLayer>
+        
+        <div className="text-center max-w-6xl text-black flex items-center justify-center flex-col mx-auto rounded-2xl my-8 p-8 shadow-xl hover:scale-105 transition-all duration-500 animate-fade-in-up">
+          <ParallaxLayer speed={0.4}>
+            <h1 className="text-6xl text-black font-bold text-center py-8 transition-all duration-1000 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+              What is TEDxCIS Dubai?
+            </h1>
+          </ParallaxLayer>
+          <ParallaxLayer speed={0.6}>
+            <p className="text-lg max-w-4xl mb-8 transition-all duration-1000 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
+              rutrum urna at malesuada. Praesent laoreet tincidunt tellus ac
+              porta. Sed consequat, odio sit amet iaculis laoreet, enim orci
+              convallis elit, vitae scelerisque lectus eros sit amet mi. Donec
+              dictum tortor sit amet consequat iaculis. Suspendisse nunc erat,
+              porta vitae dolor vitae, fermentum imperdiet magna. Cras id molestie
+              augue. In molestie luctus felis, in sagittis lacus interdum at.
+              Fusce sagittis vel tellus et accumsan. Integer rhoncus, lorem non
+              elementum porttitor, mauris tortor egestas ligula, et dapibus turpis
+              enim at lorem. Etiam at gravida arcu, vel mattis ante. Suspendisse
+              potenti. Curabitur odio nisi, imperdiet sed risus nec, luctus
+              volutpat erat.
+            </p>
+          </ParallaxLayer>
+        </div>
+        
+        <ParallaxLayer speed={0.7}>
+          <div 
+            className="bg-[url('/auditorium.jpg')] bg-cover bg-center min-h-screen rounded-2xl shadow-lg animate-fade-in"
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer speed={0.4}>
+          <h1 
+            className="text-6xl text-red-500 mt-10 font-semibold underline uppercase animate-fade-in-left"
           >
-            <source src="/video.mp4" type="video/mp4" />
-          </video>
-        </div>
-        
-        <div 
-          ref={aboutRef}
-          className={`text-center max-w-6xl text-black flex items-center justify-center flex-col mx-auto rounded-2xl my-8 p-2 shadow-xl hover:scale-102 transition-all duration-500 ${
-            aboutInView ? 'animate-fade-in-up' : 'opacity-0'
-          }`}
-        >
-          <h1 className={`text-6xl text-black font-bold text-center py-8 mt-10 transition-opacity duration-1000 ${
-            aboutInView ? 'animate-fade-in-up' : 'opacity-0'
-          }`} style={{ animationDelay: aboutInView ? '200ms' : '0ms' }}>
-            What is TEDxCIS Dubai?
+            Our Speakers
           </h1>
-          <p className={`text-lg max-w-4xl mb-15 transition-opacity duration-1000 ${
-            aboutInView ? 'animate-fade-in-up' : 'opacity-0'
-          }`} style={{ animationDelay: aboutInView ? '400ms' : '0ms' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
-            rutrum urna at malesuada. Praesent laoreet tincidunt tellus ac
-            porta. Sed consequat, odio sit amet iaculis laoreet, enim orci
-            convallis elit, vitae scelerisque lectus eros sit amet mi. Donec
-            dictum tortor sit amet consequat iaculis. Suspendisse nunc erat,
-            porta vitae dolor vitae, fermentum imperdiet magna. Cras id molestie
-            augue. In molestie luctus felis, in sagittis lacus interdum at.
-            Fusce sagittis vel tellus et accumsan. Integer rhoncus, lorem non
-            elementum porttitor, mauris tortor egestas ligula, et dapibus turpis
-            enim at lorem. Etiam at gravida arcu, vel mattis ante. Suspendisse
-            potenti. Curabitur odio nisi, imperdiet sed risus nec, luctus
-            volutpat erat.
-          </p>
-        </div>
-        
-        <div 
-          ref={auditoriumRef}
-          className={`bg-[url('/auditorium.jpg')] bg-cover bg-center min-h-screen rounded-2xl shadow-lg transition-opacity duration-1000 ${
-            auditoriumInView ? 'animate-fade-in' : 'opacity-0'
-          }`}
-        />
-
-        <h1 
-          ref={speakersHeadingRef}
-          className={`text-6xl text-red-500 mt-10 font-semibold underline uppercase transition-opacity duration-1000 ${
-            speakersHeadingInView ? 'animate-fade-in-left' : 'opacity-0'
-          }`}
-        >
-          Our Speakers
-        </h1>
+        </ParallaxLayer>
       </main>
-      <SpeakerArray speakers={externalSpeakers} label="External" />
-      <SpeakerArray speakers={internalSpeakers} label="Internal" />
+      
+      <ParallaxLayer speed={0.6}>
+        <SpeakerArray speakers={externalSpeakers} label="External" />
+      </ParallaxLayer>
+      
+      <ParallaxLayer speed={0.5}>
+        <SpeakerArray speakers={internalSpeakers} label="Internal" />
+      </ParallaxLayer>
 
-      <div 
-        ref={registrationRef}
-        className="max-w-7xl shadow-2xl mx-auto p-8 my-20 rounded-2xl hover:shadow-3xl transition-all duration-500 animate-fade-in-up"
-      >
-        <h1 className="text-red-600 text-start text-5xl mb-10 font-bold transition-opacity duration-1000 animate-fade-in-left">
-          Registration
-        </h1>
-        <input 
-          className="outline text-black p-2 text-lg rounded-lg block mb-4 w-full transition-all duration-300 focus:scale-105 focus:shadow-lg animate-fade-in-up" 
-          style={{ animationDelay: '200ms' }} 
-          placeholder="Enter your name here" 
-        />
-        <input 
-          className="outline text-black p-2 text-lg rounded-lg block mb-4 w-full transition-all duration-300 focus:scale-105 focus:shadow-lg animate-fade-in-up" 
-          style={{ animationDelay: '300ms' }} 
-          placeholder="Enter your email here" 
-        />
-        <input 
-          className="outline text-black p-2 text-lg rounded-lg block mb-4 w-full transition-all duration-300 focus:scale-105 focus:shadow-lg animate-fade-in-up" 
-          style={{ animationDelay: '400ms' }} 
-          placeholder="Enter your phone number here" 
-        />
-        <button 
-          className="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-2xl transition-all duration-300 hover:scale-110 hover:shadow-lg animate-fade-in-up" 
-          style={{ animationDelay: '500ms' }}
-        >
-          Submit
-        </button>
+      <div className="max-w-4xl bg-linear-to-br from-white to-gray-50 shadow-2xl mx-auto p-12 my-20 rounded-3xl hover:shadow-3xl transition-all duration-500 animate-fade-in-up border border-gray-100">
+        <ParallaxLayer speed={0.3}>
+          <div className="text-center mb-12">
+            <h1 className="text-red-600 text-6xl font-bold transition-opacity duration-1000 animate-fade-in-left mb-3">
+              Registration
+            </h1>
+            <p className="text-gray-600 text-lg">Join us for an unforgettable TEDx experience</p>
+          </div>
+        </ParallaxLayer>
+        
+        <ParallaxLayer speed={0.35}>
+          <div className="mb-6">
+            <label className="block text-gray-700 text-sm font-semibold mb-2 ml-1">
+              Full Name
+            </label>
+            <input 
+              type="text"
+              className="w-full px-6 py-4 text-lg text-gray-800 bg-white border-2 border-gray-200 rounded-2xl focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-200 transition-all duration-300 hover:border-gray-300 animate-fade-in-up" 
+              style={{ animationDelay: '200ms' }} 
+              placeholder="John Doe" 
+            />
+          </div>
+        </ParallaxLayer>
+        
+        <ParallaxLayer speed={0.4}>
+          <div className="mb-6">
+            <label className="block text-gray-700 text-sm font-semibold mb-2 ml-1">
+              Email Address
+            </label>
+            <input 
+              type="email"
+              className="w-full px-6 py-4 text-lg text-gray-800 bg-white border-2 border-gray-200 rounded-2xl focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-200 transition-all duration-300 hover:border-gray-300 animate-fade-in-up" 
+              style={{ animationDelay: '300ms' }} 
+              placeholder="john@example.com" 
+            />
+          </div>
+        </ParallaxLayer>
+        
+        <ParallaxLayer speed={0.45}>
+          <div className="mb-8">
+            <label className="block text-gray-700 text-sm font-semibold mb-2 ml-1">
+              Phone Number
+            </label>
+            <input 
+              type="tel"
+              className="w-full px-6 py-4 text-lg text-gray-800 bg-white border-2 border-gray-200 rounded-2xl focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-200 transition-all duration-300 hover:border-gray-300 animate-fade-in-up" 
+              style={{ animationDelay: '400ms' }} 
+              placeholder="+971 50 123 4567" 
+            />
+          </div>
+        </ParallaxLayer>
+        
+        <ParallaxLayer speed={0.5}>
+          <button 
+            className="w-full bg-linear-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-xl font-bold px-8 py-5 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl animate-fade-in-up transform active:scale-95" 
+            style={{ animationDelay: '500ms' }}
+          >
+            Register Now
+          </button>
+        </ParallaxLayer>
       </div>
 
       <footer 
-        ref={footerRef}
-        className={`relative bg-[#e11d1d] transition-opacity duration-1000 ${
-          footerInView ? 'animate-fade-in-up' : 'opacity-0'
-        }`}
+        className="relative bg-[#e11d1d] animate-fade-in-up"
       >
-        {/* Top SVG wave that 'cuts' into the red footer to create a wavy border */}
         <div
-          className={`absolute -top-1 left-0 w-full overflow-hidden leading-none transition-opacity duration-1000 ${
-            footerInView ? 'animate-fade-in' : 'opacity-0'
-          }`}
+          className="absolute -top-1 left-0 w-full overflow-hidden leading-none animate-fade-in"
           aria-hidden="true"
         >
           <svg
-            className="block w-[150%] h-16 md:h-24"
+            className="block w-[150%] h-24 md:h-32"
             viewBox="0 0 1200 120"
             preserveAspectRatio="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            {/* white path to reveal the page above as a wavy shape */}
             <path
-              d="M0,0 C150,100 350,100 600,50 C850,0 1050,0 1200,50 L1200,120 L0,120 Z"
+              d="M0,20 C100,100 200,40 300,70 C400,90 500,50 600,70 C700,80 800,60 900,50 C1000,40 1100,50 1200,45 L1200,120 L0,120 Z"
               fill="#ffffff"
             />
           </svg>
         </div>
 
-        {/* Footer content spacer (adjust height as needed) */}
         <div className="pt-10 pb-6 md:pt-12 md:pb-8"></div>
       </footer>
-    </div>
+    </ParallaxContainer>
   );
 }
