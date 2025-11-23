@@ -20,7 +20,6 @@ export function ParallaxLayer({ children, speed = 0.5, offset = 0, className = "
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      
       const parallaxOffset = scrollY * (speed - 1);
       api.start({ y: parallaxOffset });
     };
@@ -47,11 +46,8 @@ export function ParallaxLayer({ children, speed = 0.5, offset = 0, className = "
       ref={ref}
       className={className}
       style={{ 
-        position: offset !== 0 ? 'absolute' : 'relative',
-        top: offset !== 0 ? `${offset * 100}vh` : undefined,
         y: springs.y,
-        willChange: 'transform',
-        width: '100%'
+        willChange: 'transform'
       }}
     >
       {children}
