@@ -70,73 +70,73 @@ export interface Speaker {
 const externalSpeakers: Speaker[] = [
   {
     id: 1,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 2,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 3,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 4,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 5,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
 ];
 
 const internalSpeakers: Speaker[] = [
   {
     id: 1,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 2,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 3,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 4,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 5,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 6,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   },
   {
     id: 7,
-    name: "razeen",
-    href: "razeen.jpg",
+    name: "placeholder",
+    href: "/null.jpg",
   }
 ];
 
 const SpeakerArray = ({speakers, label}: {speakers: Speaker[], label: string}) => {
   return (
     <div 
-      className="w-full min-h-50 shadow-2xl py-4 overflow-x-auto whitespace-nowrap mb-10 animate-fade-in-up"
+      className="w-full min-h-50 shadow-2xl py-4 overflow-x-auto whitespace-nowrap mb-10 animate-fade-in-up rounded-2xl"
     >
       {speakers.map((speaker, index) => (
         <div
@@ -146,13 +146,13 @@ const SpeakerArray = ({speakers, label}: {speakers: Speaker[], label: string}) =
         >
           <div className="relative overflow-hidden rounded-2xl shadow-xl group-hover:shadow-2xl group-hover:shadow-red-200 transition-all duration-300">
             <Image
-              src={`/${speaker.href}`}
+              src={`${speaker.href}`}
               width={300}
               height={300}
               alt={speaker.name}
               className="object-cover max-h-[300px] transition-transform duration-500 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-red/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <p className="text-center text-gray-800 mt-4 text-xl font-semibold">
             {speaker.name}
@@ -200,14 +200,14 @@ export default function Home() {
               muted
               playsInline
               loop
-              className="w-full object-cover h-auto rounded-3xl shadow-2xl border-4 border-white transition-opacity duration-1000 hover:shadow-red-200"
+              className="w-full object-cover h-auto rounded-3xl shadow-2xl border-white transition-opacity duration-1000 hover:shadow-red-200"
             >
               <source src="/video.mp4" type="video/mp4" />
             </video>
           </div>
         </ParallaxLayer>
         
-        <div className="text-center max-w-6xl text-black flex items-center justify-center flex-col mx-auto rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border border-gray-200 hover:scale-105 transition-all duration-500 animate-fade-in-up">
+        <div className="text-center w-full text-black flex items-center justify-center flex-col mx-auto rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-105 transition-all duration-500 animate-fade-in-up">
           <ParallaxLayer speed={0.4} className="">
             <h1 className="text-6xl font-bold text-center py-8 bg-linear-to-r from-gray-900 via-red-700 to-black bg-clip-text text-transparent transition-all duration-1000 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
               What is TEDxCIS Dubai?
@@ -233,7 +233,7 @@ export default function Home() {
         
         <ParallaxLayer speed={0.7}>
           <div 
-            className="relative bg-[url('/auditorium.jpg')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-4 border-white animate-fade-in mt-16 overflow-hidden group"
+            className="relative bg-[url('/auditorium.jpg')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group"
           >
             <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>
@@ -247,9 +247,7 @@ export default function Home() {
             <div className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-red-600 to-red-800 rounded-full"></div>
           </h1>
         </ParallaxLayer>
-      </main>
-      
-      <ParallaxLayer speed={0.6}>
+        <ParallaxLayer speed={0.6}>
         <div className="my-8">
           <SpeakerArray speakers={externalSpeakers} label="External" />
         </div>
@@ -260,6 +258,9 @@ export default function Home() {
           <SpeakerArray speakers={internalSpeakers} label="Internal" />
         </div>
       </ParallaxLayer>
+      </main>
+      
+      
 
       <Footer />
     </ParallaxContainer>

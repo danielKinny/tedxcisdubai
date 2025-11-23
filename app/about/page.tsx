@@ -8,21 +8,37 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Image from "next/image";
 
+const metad: { title: string; image: string; desc: string }[] = [
+  {
+    title: "2018",
+    image: "/null.jpg",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at aliquet odio. In hac habitasse platea dictumst. Vivamus eget nisl nisl. Ut nibh diam, pharetra sed dapibus quis, consectetur nec massa. Suspendisse sodales lectus ut porttitor ultricies. Nunc faucibus consectetur justo, ac placerat tortor tristique sit amet. Nullam non viverra tortor. Nunc aliquet, lorem vitae elementum porta, ante nibh gravida enim, eget sodales odio turpis nec purus. Ut id hendrerit nunc. Integer luctus enim turpis. Vestibulum sit amet nunc non felis viverra pharetra vel at ligula. Maecenas consectetur malesuada nisi, et commodo velit. ",
+  },
+  {
+    title: "2024",
+    image: "/null.jpg",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at aliquet odio. In hac habitasse platea dictumst. Vivamus eget nisl nisl. Ut nibh diam, pharetra sed dapibus quis, consectetur nec massa. Suspendisse sodales lectus ut porttitor ultricies. Nunc faucibus consectetur justo, ac placerat tortor tristique sit amet. Nullam non viverra tortor. Nunc aliquet, lorem vitae elementum porta, ante nibh gravida enim, eget sodales odio turpis nec purus. Ut id hendrerit nunc. Integer luctus enim turpis. Vestibulum sit amet nunc non felis viverra pharetra vel at ligula. Maecenas consectetur malesuada nisi, et commodo velit. ",
+  },
+  {
+    title: "2025",
+    image: "/null.jpg",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at aliquet odio. In hac habitasse platea dictumst. Vivamus eget nisl nisl. Ut nibh diam, pharetra sed dapibus quis, consectetur nec massa. Suspendisse sodales lectus ut porttitor ultricies. Nunc faucibus consectetur justo, ac placerat tortor tristique sit amet. Nullam non viverra tortor. Nunc aliquet, lorem vitae elementum porta, ante nibh gravida enim, eget sodales odio turpis nec purus. Ut id hendrerit nunc. Integer luctus enim turpis. Vestibulum sit amet nunc non felis viverra pharetra vel at ligula. Maecenas consectetur malesuada nisi, et commodo velit. ",
+  },
+];
+
 export default function About() {
   return (
     <ParallaxContainer className="bg-linear-to-b from-white via-gray-50 to-white min-h-screen">
       <Header />
 
-      <ParallaxLayer speed={0.4}>
-        <div className="text-white text-6xl font-extrabold text-center w-full h-[300px] object-fit flex items-center justify-center bg-[url('/auditorium.jpg')] bg-cover bg-center">
-          <span className="shadow-lg">
-            OUR STORY
-          </span>
+      <ParallaxLayer speed={0.5} offset={0}>
+        <div className="text-white text-6xl font-extrabold text-center w-full h-[300px] object-fit flex items-center justify-center bg-[url('/auditorium.jpg')] bg-cover bg-center mb-16">
+          <span className="shadow-lg">OUR STORY</span>
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer speed={0.6}>
-        <div className="bg-white hover:scale-102 transition-transform rounded-3xl shadow-2xl p-12 my-8 border border-gray-200 animate-fade-in-up max-w-5xl mx-auto">
+      <ParallaxLayer speed={0.3} offset={0.4} className="my-10">
+        <div className="bg-white hover:scale-102 transition-transform rounded-3xl shadow-2xl p-12 my-16 border border-gray-200 animate-fade-in-up max-w-5xl mx-auto">
           <h1 className="text-4xl text-center text-black font-bold mb-8">
             Our Manifesto
           </h1>
@@ -38,18 +54,30 @@ export default function About() {
         </div>
       </ParallaxLayer>
 
-      <div className="grid grid-cols-3">
-
-        <div>
-            <p>
-                2018
-            </p>
-            <Image src="/razeen.jpg" width={100} height={100} alt="Razeen"/>
+      <ParallaxLayer speed={0.6} offset={1.2}>
+        <div className="grid grid-cols-3 mx-auto p-8 border border-black w-full rounded-2xl mt-16">
+          {metad.map((card) => (
+            <div
+              className="hover:scale-105 duration-300 transition-transform"
+              key={card.title}
+            >
+              <p className="text-black text-center text-5xl font-bold mb-2">
+                {card.title}
+              </p>
+              <Image
+                src={card.image}
+                className="mx-auto rounded-lg"
+                width={400}
+                height={400}
+                alt={card.title}
+              />
+              <p className="text-black text-center max-w-5/6 mx-auto text-lg py-4">
+                {card.desc}
+              </p>
+            </div>
+          ))}
         </div>
-
-
-
-      </div>
+      </ParallaxLayer>
 
       <Footer />
     </ParallaxContainer>

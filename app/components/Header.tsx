@@ -7,7 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-const NAV_LINKS = [{name:"Home",href:"/"}, {name:"About", href:"/about"}, {name:"Contacts", href:"/contacts"}];
+const NAV_LINKS = [{name:"Home",href:"/"}, {name:"About", href:"/about"},{name:"Team", href:"/team"}, {name:"Contact", href:"/contact"}];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
