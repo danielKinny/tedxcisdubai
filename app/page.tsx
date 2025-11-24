@@ -246,7 +246,7 @@ export default function Home() {
         </ParallaxLayer>
 
         <ParallaxLayer speed={0.5}>
-          <div className="relative bg-[url('/pic.jpg')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group">
+          <div className="relative bg-[url('/pic.JPG')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group">
             <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>
         </ParallaxLayer>
