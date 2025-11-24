@@ -5,7 +5,7 @@ const stripes = Array.from({ length: 6 });
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-red-500 bg-white text-gray-700">
-      <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 py-12 sm:px-6">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
           <div className="flex items-center gap-4">
             <Image
@@ -33,14 +33,18 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-600">
               Sign up to watch!
             </p>
-            <h2 className="mt-1 text-3xl font-semibold">Sign up to watch TEDxCIS Dubai</h2>
+            <h2 className="mt-1 text-3xl font-semibold">
+              Sign up to watch TEDxCIS Dubai
+            </h2>
             <p className="mt-2 max-w-md text-sm text-gray-600">
-              Register to attend the event in person — secure your seat and receive your ticket, venue details, arrival time, and any access instructions so you can join us live.
+              Register to attend the event in person — secure your seat and
+              receive your ticket, venue details, arrival time, and any access
+              instructions so you can join us live.
             </p>
             <form className="mt-6 space-y-4">
               <div>
@@ -72,11 +76,16 @@ export default function Footer() {
             </form>
           </div>
 
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-600">Volunteers</p>
-            <h3 className="mt-1 text-2xl font-semibold">Want to be part of it?</h3>
+          <div className=" p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-600">
+              Volunteers
+            </p>
+            <h3 className="mt-1 text-2xl font-semibold">
+              Want to be part of it?
+            </h3>
             <p className="mt-3 text-sm text-gray-600">
-              We are always looking for energetic volunteers to help bring TEDxCIS Dubai to life.
+              We are always looking for energetic volunteers to help bring
+              TEDxCIS Dubai to life.
             </p>
             <a
               href="https://youtube.com/"
@@ -86,8 +95,10 @@ export default function Footer() {
             </a>
           </div>
 
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-600">Contact us</p>
+          <div className="p-8 ">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-600">
+              Contact us
+            </p>
             <h3 className="mt-1 text-2xl font-semibold">Say hello</h3>
             <a
               href="mailto:tedxcisdubai@gmail.com"
@@ -95,13 +106,17 @@ export default function Footer() {
             >
               tedxcisdubai@gmail.com
             </a>
-            <p className="mt-3 text-sm text-gray-600">We are here for partnerships, speakers, and community collaboration.</p>
+            <p className="mt-3 text-sm text-gray-600">
+              We are here for partnerships, speakers, and community
+              collaboration.
+            </p>
           </div>
         </div>
 
         <div className="border-t border-gray-200 pt-6 text-sm text-gray-700 text-center">
-          <p>This is an indepedent TEDx event operated under licensed from TED</p>
-
+          <p>
+            This is an indepedent TEDx event operated under licensed from TED
+          </p>
         </div>
       </div>
     </footer>
