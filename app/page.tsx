@@ -147,7 +147,7 @@ const SpeakerArray = ({
 }) => {
   return (
     <div className="w-full min-h-50 shadow-2xl py-4 overflow-x-auto whitespace-nowrap mb-10 animate-fade-in-up rounded-2xl">
-      <h1 className="text-red-500 text-4xl p-4 mx-8 font-bold">{heading}</h1>
+      <h1 className="text-red-500 text-4xl p-4 mx-8 font-bold text-center">{heading}</h1>
       {speakers.map((speaker, index) => (
         <div
           key={speaker.id}
@@ -252,9 +252,8 @@ export default function Home() {
         </ParallaxLayer>
 
         <ParallaxLayer speed={0.8}>
-          <h1 className="text-6xl bg-linear-to-r from-red-600 to-red-800 bg-clip-text text-transparent mt-20 mb-8 font-bold uppercase animate-fade-in-left relative inline-block">
-            Our Speakers
-            <div className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-red-600 to-red-800 rounded-full"></div>
+          <h1 className="text-6xl bg-linear-to-r text-center w-full from-red-600 to-red-800 bg-clip-text text-transparent mt-20 mb-8 font-bold uppercase animate-fade-in-left relative inline-block">
+            Meet The Speakers
           </h1>
         </ParallaxLayer>
 

@@ -32,8 +32,8 @@ export default function About() {
       <Header />
 
       <ParallaxLayer speed={0.5} maxOffset={320}>
-        <div className="text-white text-6xl font-extrabold text-center w-full h-[300px] object-fit flex items-center justify-center bg-[url('/banner.JPG')] bg-cover bg-center mb-16">
-          <span className="shadow-lg">OUR STORY</span>
+        <div className="text-white text-6xl font-extrabold text-center w-full h-[300px] object-fit flex items-center justify-center bg-[url('/pic.JPG')] bg-cover bg-center mb-16">
+          <span >OUR STORY</span>
         </div>
       </ParallaxLayer>
 
