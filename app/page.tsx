@@ -1,7 +1,10 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
-import { ParallaxContainer, ParallaxLayer } from "./components/ParallaxContainer";
+import {
+  ParallaxContainer,
+  ParallaxLayer,
+} from "./components/ParallaxContainer";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -130,14 +133,21 @@ const internalSpeakers: Speaker[] = [
     id: 7,
     name: "placeholder",
     href: "/null.jpg",
-  }
+  },
 ];
 
-const SpeakerArray = ({speakers, label}: {speakers: Speaker[], label: string}) => {
+const SpeakerArray = ({
+  speakers,
+  label,
+  heading,
+}: {
+  speakers: Speaker[];
+  label: string;
+  heading: string;
+}) => {
   return (
-    <div 
-      className="w-full min-h-50 shadow-2xl py-4 overflow-x-auto whitespace-nowrap mb-10 animate-fade-in-up rounded-2xl"
-    >
+    <div className="w-full min-h-50 shadow-2xl py-4 overflow-x-auto whitespace-nowrap mb-10 animate-fade-in-up rounded-2xl">
+      <h1 className="text-red-500 text-4xl p-4 mx-8 font-bold">{heading}</h1>
       {speakers.map((speaker, index) => (
         <div
           key={speaker.id}
@@ -206,60 +216,68 @@ export default function Home() {
             </video>
           </div>
         </ParallaxLayer>
-        
+
         <ParallaxLayer speed={0.8}>
           <div className="text-center w-full text-black flex items-center justify-center flex-col mx-auto rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-105 transition-all duration-500 animate-fade-in-up">
-            <h1 className="text-6xl font-bold text-center py-8 bg-linear-to-r from-gray-900 via-red-700 to-black bg-clip-text text-transparent transition-all duration-1000 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+            <h1
+              className="text-6xl font-bold text-center py-8 bg-linear-to-r from-gray-900 via-red-700 to-black bg-clip-text text-transparent transition-all duration-1000 animate-fade-in-up"
+              style={{ animationDelay: "200ms" }}
+            >
               What is TEDxCIS Dubai?
             </h1>
-            <p className="text-lg max-w-4xl mb-8 text-gray-700 leading-relaxed transition-all duration-1000 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
-              rutrum urna at malesuada. Praesent laoreet tincidunt tellus ac
-              porta. Sed consequat, odio sit amet iaculis laoreet, enim orci
+            <p
+              className="text-lg max-w-4xl mb-8 text-gray-700 leading-relaxed transition-all duration-1000 animate-fade-in-up"
+              style={{ animationDelay: "400ms" }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              congue rutrum urna at malesuada. Praesent laoreet tincidunt tellus
+              ac porta. Sed consequat, odio sit amet iaculis laoreet, enim orci
               convallis elit, vitae scelerisque lectus eros sit amet mi. Donec
               dictum tortor sit amet consequat iaculis. Suspendisse nunc erat,
-              porta vitae dolor vitae, fermentum imperdiet magna. Cras id molestie
-              augue. In molestie luctus felis, in sagittis lacus interdum at.
-              Fusce sagittis vel tellus et accumsan. Integer rhoncus, lorem non
-              elementum porttitor, mauris tortor egestas ligula, et dapibus turpis
-              enim at lorem. Etiam at gravida arcu, vel mattis ante. Suspendisse
-              potenti. Curabitur odio nisi, imperdiet sed risus nec, luctus
-              volutpat erat.
+              porta vitae dolor vitae, fermentum imperdiet magna. Cras id
+              molestie augue. In molestie luctus felis, in sagittis lacus
+              interdum at. Fusce sagittis vel tellus et accumsan. Integer
+              rhoncus, lorem non elementum porttitor, mauris tortor egestas
+              ligula, et dapibus turpis enim at lorem. Etiam at gravida arcu,
+              vel mattis ante. Suspendisse potenti. Curabitur odio nisi,
+              imperdiet sed risus nec, luctus volutpat erat.
             </p>
           </div>
         </ParallaxLayer>
-        
+
         <ParallaxLayer speed={0.5}>
-          <div 
-            className="relative bg-[url('/pic.jpg')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group"
-          >
+          <div className="relative bg-[url('/pic.jpg')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group">
             <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer speed={0.8}>
-          <h1 
-            className="text-6xl bg-linear-to-r from-red-600 to-red-800 bg-clip-text text-transparent mt-20 mb-8 font-bold uppercase animate-fade-in-left relative inline-block"
-          >
+          <h1 className="text-6xl bg-linear-to-r from-red-600 to-red-800 bg-clip-text text-transparent mt-20 mb-8 font-bold uppercase animate-fade-in-left relative inline-block">
             Our Speakers
             <div className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-red-600 to-red-800 rounded-full"></div>
           </h1>
         </ParallaxLayer>
-        
+
         <ParallaxLayer speed={0.9}>
           <div className="my-8">
-            <SpeakerArray speakers={externalSpeakers} label="External" />
+            <SpeakerArray
+              speakers={externalSpeakers}
+              label="External"
+              heading="External Speakers"
+            />
           </div>
         </ParallaxLayer>
-      
+
         <ParallaxLayer speed={0.9}>
           <div className="my-8">
-            <SpeakerArray speakers={internalSpeakers} label="Internal" />
+            <SpeakerArray
+              speakers={internalSpeakers}
+              label="Internal"
+              heading="Internal Speakers"
+            />
           </div>
         </ParallaxLayer>
       </main>
-      
-      
 
       <Footer />
     </ParallaxContainer>
