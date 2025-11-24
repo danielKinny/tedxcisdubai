@@ -7,9 +7,10 @@ interface ParallaxLayerProps {
   speed?: number;
   offset?: number;
   className?: string;
+  maxOffset?: number;
 }
 
-export function ParallaxLayer({ children, speed = 0.5, offset = 0, className = "" }: ParallaxLayerProps) {
+export function ParallaxLayer({ children, speed = 0.5, offset = 0, className = "", maxOffset = 160 }: ParallaxLayerProps) {
   const ref = useRef<HTMLDivElement>(null);
   
   const [springs, api] = useSpring(() => ({
@@ -20,8 +21,9 @@ export function ParallaxLayer({ children, speed = 0.5, offset = 0, className = "
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const parallaxOffset = scrollY * (speed - 1);
-      api.start({ y: parallaxOffset });
+      const parallaxOffset = scrollY * (speed - 1) + offset;
+      const limitedOffset = Math.max(-maxOffset, Math.min(maxOffset, parallaxOffset));
+      api.start({ y: limitedOffset });
     };
     
     let ticking = false;
@@ -39,7 +41,7 @@ export function ParallaxLayer({ children, speed = 0.5, offset = 0, className = "
     handleScroll();
     
     return () => window.removeEventListener('scroll', onScroll);
-  }, [api, speed]);
+  }, [api, speed, offset, maxOffset]);
   
   return (
     <animated.div

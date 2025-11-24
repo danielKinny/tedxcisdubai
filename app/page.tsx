@@ -192,8 +192,8 @@ export default function Home() {
       <Header />
 
       <main className="max-w-8xl pb-10 px-8">
-        <ParallaxLayer speed={0.3}>
-          <div className="mb-16">
+        <ParallaxLayer speed={0.7}>
+          <div className="mt-8 mb-16">
             <video
               ref={videoRef}
               autoPlay
@@ -207,13 +207,11 @@ export default function Home() {
           </div>
         </ParallaxLayer>
         
-        <div className="text-center w-full text-black flex items-center justify-center flex-col mx-auto rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-105 transition-all duration-500 animate-fade-in-up">
-          <ParallaxLayer speed={0.4} className="">
+        <ParallaxLayer speed={0.8}>
+          <div className="text-center w-full text-black flex items-center justify-center flex-col mx-auto rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-105 transition-all duration-500 animate-fade-in-up">
             <h1 className="text-6xl font-bold text-center py-8 bg-linear-to-r from-gray-900 via-red-700 to-black bg-clip-text text-transparent transition-all duration-1000 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
               What is TEDxCIS Dubai?
             </h1>
-          </ParallaxLayer>
-          <ParallaxLayer speed={0.6}>
             <p className="text-lg max-w-4xl mb-8 text-gray-700 leading-relaxed transition-all duration-1000 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
               rutrum urna at malesuada. Praesent laoreet tincidunt tellus ac
@@ -228,18 +226,18 @@ export default function Home() {
               potenti. Curabitur odio nisi, imperdiet sed risus nec, luctus
               volutpat erat.
             </p>
-          </ParallaxLayer>
-        </div>
+          </div>
+        </ParallaxLayer>
         
-        <ParallaxLayer speed={0.7}>
+        <ParallaxLayer speed={0.5}>
           <div 
-            className="relative bg-[url('/auditorium.jpg')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group"
+            className="relative bg-[url('/pic.jpg')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group"
           >
             <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer speed={0.4}>
+        <ParallaxLayer speed={0.8}>
           <h1 
             className="text-6xl bg-linear-to-r from-red-600 to-red-800 bg-clip-text text-transparent mt-20 mb-8 font-bold uppercase animate-fade-in-left relative inline-block"
           >
@@ -247,17 +245,18 @@ export default function Home() {
             <div className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-red-600 to-red-800 rounded-full"></div>
           </h1>
         </ParallaxLayer>
-        <ParallaxLayer speed={0.6}>
-        <div className="my-8">
-          <SpeakerArray speakers={externalSpeakers} label="External" />
-        </div>
-      </ParallaxLayer>
+        
+        <ParallaxLayer speed={0.9}>
+          <div className="my-8">
+            <SpeakerArray speakers={externalSpeakers} label="External" />
+          </div>
+        </ParallaxLayer>
       
-      <ParallaxLayer speed={0.5}>
-        <div className="my-8 mb-16">
-          <SpeakerArray speakers={internalSpeakers} label="Internal" />
-        </div>
-      </ParallaxLayer>
+        <ParallaxLayer speed={0.9}>
+          <div className="my-8">
+            <SpeakerArray speakers={internalSpeakers} label="Internal" />
+          </div>
+        </ParallaxLayer>
       </main>
       
       

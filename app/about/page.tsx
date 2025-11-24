@@ -31,13 +31,13 @@ export default function About() {
     <ParallaxContainer className="bg-linear-to-b from-white via-gray-50 to-white min-h-screen">
       <Header />
 
-      <ParallaxLayer speed={0.5}>
-        <div className="text-white text-6xl font-extrabold text-center w-full h-[300px] object-fit flex items-center justify-center bg-[url('/auditorium.jpg')] bg-cover bg-center mb-16">
+      <ParallaxLayer speed={0.5} maxOffset={320}>
+        <div className="text-white text-6xl font-extrabold text-center w-full h-[300px] object-fit flex items-center justify-center bg-[url('/banner.jpg')] bg-cover bg-center mb-16">
           <span className="shadow-lg">OUR STORY</span>
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer speed={0.3}>
+      <ParallaxLayer speed={0.3} maxOffset={280}>
         <div className="bg-white hover:scale-102 transition-transform rounded-3xl shadow-2xl p-12 my-16 border border-gray-200 animate-fade-in-up max-w-5xl mx-auto">
           <h1 className="text-4xl text-center text-black font-bold mb-8">
             Our Manifesto
@@ -54,7 +54,7 @@ export default function About() {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer speed={0.7}>
+      <ParallaxLayer speed={0.7} maxOffset={360}>
         <div className="grid grid-cols-3 mx-auto p-8 border border-black w-full rounded-2xl my-16 max-w-7xl">
           {metad.map((card) => (
             <div
