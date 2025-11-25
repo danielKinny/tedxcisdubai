@@ -55,7 +55,7 @@ export default function About() {
       </ParallaxLayer>
 
       <ParallaxLayer speed={0.7} maxOffset={360}>
-        <div className="grid grid-cols-3 mx-auto p-8 border border-black w-full rounded-2xl my-16 max-w-7xl">
+        <div className="grid grid-cols-3 p-8 border border-black max-w-8xl rounded-2xl my-16  mx-16">
           {metad.map((card) => (
             <div
               className="hover:scale-105 duration-300 transition-transform"
@@ -66,9 +66,9 @@ export default function About() {
               </p>
               <Image
                 src={card.image}
-                className="mx-auto rounded-lg"
-                width={400}
-                height={400}
+                className="mx-auto rounded-lg h-96 w-108 object-cover"
+                width={350}
+                height={300}
                 alt={card.title}
               />
               <p className="text-black text-center max-w-5/6 mx-auto text-lg py-4">

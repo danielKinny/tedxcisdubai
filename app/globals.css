@@ -125,3 +125,57 @@ html {
   animation: fade-in-right 0.8s ease-out forwards;
   opacity: 0;
 }
+
+.split-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.split-text__inner {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0;
+  white-space: pre-wrap;
+}
+
+.split-text__char {
+  display: inline-block;
+  white-space: pre;
+  transform: translate3d(0, 130%, 0) rotateX(25deg);
+  opacity: 0;
+  animation: split-text-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: inherit;
+}
+
+.split-text:not(.split-text--visible) .split-text__char {
+  animation-play-state: paused;
+}
+
+.split-text--visible .split-text__char {
+  animation-play-state: running;
+}
+
+@keyframes split-text-rise {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 140%, 0) rotateX(35deg);
+    filter: blur(4px);
+  }
+  70% {
+    opacity: 1;
+    transform: translate3d(0, -6%, 0) rotateX(0deg);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .split-text__char {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

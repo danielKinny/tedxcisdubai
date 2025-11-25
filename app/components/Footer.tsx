@@ -5,7 +5,7 @@ const stripes = Array.from({ length: 6 });
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-red-500 bg-white text-gray-700">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-18 flex w-full flex-col gap-12 px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
           <div className="flex items-center gap-4">
             <Image
@@ -16,13 +16,14 @@ export default function Footer() {
               className="h-16 w-auto"
             />
             <div>
-              <p className="text-xs uppercase tracking-[0.35em] text-red-600">
-                Ideas Worth Spreading
-              </p>
+              
             </div>
           </div>
         </div>
 
+        <p className="text-xs uppercase tracking-[0.35em] text-red-600">
+                Ideas Worth Spreading
+              </p>
         <div className="space-y-2">
           {stripes.map((_, index) => (
             <div
@@ -69,15 +70,15 @@ export default function Footer() {
               </div>
               <button
                 type="button"
-                className="w-full rounded-full bg-red-600 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-red-700"
+                className="w-full rounded-full hover:scale-104 transition-all cursor-pointer bg-red-600 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white hover:bg-red-700"
               >
                 Register
               </button>
             </form>
           </div>
 
-          <div className=" p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-600">
+          <div className=" max-w-2/3 mx-auto p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em]  text-red-600">
               Volunteers
             </p>
             <h3 className="mt-1 text-2xl font-semibold">
@@ -95,7 +96,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="p-8 ">
+          <div className="p-8 mx-auto max-w-2/3">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-600">
               Contact us
             </p>

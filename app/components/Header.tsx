@@ -13,7 +13,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
   return (
-    <header className="bg-white/80 backdrop-blur-xl py-4 animate-fade-in-down z-10 sticky top-0 border-b border-gray-200 shadow-sm">
+    <header className="bg-white/10 backdrop-blur-xl py-4 animate-fade-in-down z-10 sticky top-0 border-b border-gray-200 shadow-sm">
       <div className="grid grid-cols-[auto_1fr_auto] items-center px-4">
         <div className="flex items-center gap-3 animate-fade-in-left">
           <a
