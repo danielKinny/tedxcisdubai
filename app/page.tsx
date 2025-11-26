@@ -225,7 +225,7 @@ export default function Home() {
           <div className="text-center w-8xl text-red-500 flex items-center justify-center flex-col rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-101 transition-all duration-500 animate-fade-in-up">
             <SplitText
             text="What is TEDxCIS?"
-            className="text-8xl font-bold text-center"
+            className="text-8xl mb-4 font-bold text-center"
             delay={400}
             duration={0.9}
             ease="power3.out"
@@ -272,8 +272,8 @@ export default function Home() {
         <ParallaxLayer speed={0.5}>
           <div className="relative bg-[url('/mariamma.JPG')] flex-col bg-cover bg-center rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group flex items-start justify-center">
           
-          <p className="text-gray-200 tracking-tighter leading-[1.1] font-bold p-4 px-8 mb-50 text-[125px]">Location:<br/>The Mariamma Varkey <br/> Auditorium</p>
-
+          <p className="text-gray-200 tracking-tighter leading-[1.1] font-bold p-4 px-8 text-[125px]">Location:<br/>The Mariamma Varkey <br/> Auditorium</p>
+          <p className="text-gray-300 max-w-3xl tracking-tighter leading-[1.1] p-4 px-8 text-3xl">The Mariamma Auditorium is CIS Dubai’s 800-seat performance space, designed for assemblies, productions, music events, and community gatherings. With clear acoustics, professional lighting, and tiered seating, it delivers a polished, comfortable environment for every event.</p>
           </div>
         </ParallaxLayer>
 

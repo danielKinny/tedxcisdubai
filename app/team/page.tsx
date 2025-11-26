@@ -19,18 +19,18 @@ const leads: TeamMember[] = [
   {
     id: 1,
     name: "Mohammed Mujtaba",
-    role: "Event Lead",
+    role: "Lead Organizer",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/mujtaba.JPG",
   },
   {
     id: 2,
     name: "Joel Muthukattil",
-    role: "Faculty Leader",
+    role: "Lead Organizer",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/joel.JPG",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const leads: TeamMember[] = [
     role: "Executive Producer",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/miraya.JPG",
   },
 ];
 
@@ -49,7 +49,7 @@ const secondRow = [
     role: "Deputy Lead and Host",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/samyar.JPG",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const secondRow = [
     role: "Production Director",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/daniel.JPG",
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const secondRow = [
     role: "Production Director",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/nazia.JPG",
   },
 ];
 
@@ -76,7 +76,7 @@ const thirdRow = [
     role: "Media Director",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/shlok.JPG",
   },
   {
     id: 8,
@@ -84,7 +84,7 @@ const thirdRow = [
     role: "Creative Director",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/lance.JPG",
   },
   {
     id: 9,
@@ -92,7 +92,7 @@ const thirdRow = [
     role: "Marketing Director",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/hadiya.JPG",
   },
 ];
 
@@ -103,7 +103,7 @@ const fourthRow = [
     role: "Head Event Coordinator",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/lekisha.JPG",
   },
   {
     id: 11,
@@ -111,7 +111,7 @@ const fourthRow = [
     role: "Event Coordinator",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/sahil.JPG",
   },
   {
     id: 12,
@@ -119,7 +119,7 @@ const fourthRow = [
     role: "Media Coordinator",
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
-    photo: "/profile.JPG",
+    photo: "/ibrahim.JPG",
   },
 ];
 
@@ -131,7 +131,7 @@ const fiveRow = [
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
 
-    photo: "/profile.JPG",
+    photo: "/joshua.JPG",
   },
   {
     id: 14,
@@ -140,7 +140,7 @@ const fiveRow = [
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
 
-    photo: "/profile.JPG",
+    photo: "/saanj.JPG",
   },
   {
     id: 15,
@@ -149,7 +149,7 @@ const fiveRow = [
     longDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
 
-    photo: "/profile.JPG",
+    photo: "/neharika.JPG",
   },
 ];
 
@@ -164,12 +164,15 @@ const TeamCard = ({
     <button
       type="button"
       onClick={() => onSelect(member)}
-      className="hover:scale-102 transition-transform duration-300 flex flex-col items-center bg-white rounded-lg shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+      className="hover:scale-102 cursor-pointer transition-transform duration-300 flex flex-col items-center bg-white rounded-lg shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
       aria-label={`View more about ${member.name}`}
     >
-      <div className="bg-[url('/profile.JPG')] bg-cover flex flex-col justify-end rounded-lg items-start bg-center p-8 w-full h-200 shadow-md text-left">
-        <h1 className="text-white text-2xl font-bold ">{member.name}</h1>
-        <h1 className="text-white text-3xl tracking-tighter font-semiold">
+      <div
+        className="bg-cover flex flex-col justify-end rounded-lg items-start bg-center p-8 w-full h-200 shadow-md text-left"
+        style={{ backgroundImage: `url(${member.photo})` }}
+      >
+        <h1 className="text-white text-2xl ">{member.name}</h1>
+        <h1 className="text-white text-3xl tracking-tighter uppercase font-bold">
           {member.role}
         </h1>
       </div>
@@ -179,7 +182,7 @@ const TeamCard = ({
 
 const TeamPage = () => {
   const [selectedMember, setSelectedMember] = React.useState<TeamMember | null>(
-    null,
+    null
   );
 
   React.useEffect(() => {
@@ -288,70 +291,47 @@ const TeamPage = () => {
       <Footer />
 
       {selectedMember && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center">
-          <div className="relative mx-auto flex w-full max-h-[85vh] min-h-[60vh] overflow-hidden bg-white/5">
+        <div className="fixed inset-0 z-50 flex items-center bg-black/80 backdrop-blur-sm">
+          <div className="relative mx-auto w-full max-w-7xl max-h-[90vh] overflow-hidden rounded-3xl bg-white/95 shadow-2xl">
             <button
               type="button"
               onClick={closeModal}
-              className="absolute top-4 right-4 z-20 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-gray-700 shadow-lg transition hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+              className="absolute top-4 cursor-pointer right-4 z-20 rounded-full bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-lg transition hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
               aria-label="Close member details"
             >
               Close
             </button>
 
-            <div className="flex h-full w-full flex-col lg:flex-row">
-              <div className="relative w-full min-h-[320px] lg:min-h-full lg:w-auto lg:max-w-md lg:flex-none lg:aspect-[3/4]">
+            <div className="flex h-full flex-col gap-6 overflow-hidden p-6 md:flex-row">
+              <div className="relative w-full overflow-hidden rounded-2xl bg-black md:w-1/2">
                 <Image
                   src={selectedMember.photo}
                   alt={`${selectedMember.name} portrait`}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 30vw"
-                  className="object-cover"
+                  width={600}
+                  height={800}
+                  className="h-full w-full object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                  <p className="text-xs uppercase tracking-[0.4em] text-white/70">
-                    {selectedMember.role}
-                  </p>
-                  <h2 className="text-4xl font-bold tracking-tight">
-                    {selectedMember.name}
-                  </h2>
-                </div>
               </div>
 
-              <div className="flex-1 bg-white/95 backdrop-blur-sm overflow-y-auto">
-                <div className="mx-auto flex max-w-4xl flex-col gap-6 px-6 py-12 md:px-12">
+              <div className="flex-1 overflow-y-auto rounded-2xl bg-white/90 p-6">
+                <div className="flex flex-col gap-4">
                   <div className="flex flex-col gap-2">
                     <span className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">
                       Profile
                     </span>
-                    <h3 className="text-3xl font-semibold text-gray-900">
+                    <h3 className="text-6xl font-bold text-gray-900">
                       {selectedMember.name}
                     </h3>
+                    <h4 className="text-2xl tracking-tighter text-gray-700">
+                      {selectedMember.role}
+                    </h4>
                   </div>
                   <p className="text-lg leading-relaxed text-gray-700 whitespace-pre-line">
                     {selectedMember.longDesc}
                   </p>
-                  <div className="h-px bg-gradient-to-r from-red-500/60 via-red-500/20 to-transparent" />
-                  <div className="grid gap-4 text-sm text-gray-500 sm:grid-cols-2">
-                    <div className="rounded-2xl border border-gray-100 bg-gray-50/80 p-4 shadow-sm">
-                      <p className="text-xs uppercase tracking-wide text-red-600">
-                        Role
-                      </p>
-                      <p className="text-base font-medium text-gray-900">
-                        {selectedMember.role}
-                      </p>
-                    </div>
-                    <div className="rounded-2xl border border-gray-100 bg-gray-50/80 p-4 shadow-sm">
-                      <p className="text-xs uppercase tracking-wide text-red-600">
-                        TEDx Season
-                      </p>
-                      <p className="text-base font-medium text-gray-900">
-                        2024 · CIS Dubai
-                      </p>
-                    </div>
-                  </div>
+                  <div className="h-px bg-linear-to-r from-red-500/60 via-red-500/20 to-transparent" />
+                  <div className="grid gap-4 text-sm text-gray-500 sm:grid-cols-2"></div>
                 </div>
               </div>
             </div>
