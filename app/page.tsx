@@ -8,6 +8,7 @@ import {
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollReveal from "./components/ScrollReveal";
+import SplitText from "./components/SplitText";
 
 function AnimatedLogo({ className }: { className?: string }) {
   return (
@@ -221,18 +222,22 @@ export default function Home() {
         </ParallaxLayer>
 
         <ParallaxLayer speed={0.8}>
-          <div className="text-center w-8xl text-black flex items-center justify-center flex-col rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-101 transition-all duration-500 animate-fade-in-up">
-            <h1
-              className="text-8xl font-bold text-center py-8 bg-linear-to-r from-gray-900 via-red-700 to-black bg-clip-text text-transparent transition-all duration-1000 animate-fade-in-up"
-              style={{ animationDelay: "200ms" }}
-            >
-              What is TEDxCIS Dubai?
-            </h1>
-            <p
-              className="text-lg max-w-4xl mb-8 text-gray-700 leading-relaxed transition-all duration-1000 animate-fade-in-up"
-              style={{ animationDelay: "400ms" }}
-            >
-              TEDxCIS is an independently organized TEDx event designed to bring
+          <div className="text-center w-8xl text-red-500 flex items-center justify-center flex-col rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-101 transition-all duration-500 animate-fade-in-up">
+            <SplitText
+            text="What is TEDxCIS?"
+            className="text-8xl font-bold text-center"
+            delay={400}
+            duration={0.9}
+            ease="power3.out"
+            splitType="lines"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            />
+            <SplitText
+            text="TEDxCIS is an independently organized TEDx event designed to bring
               the TED spirit of “ideas worth spreading” into the CIS community.
               Its goal is simple: inspire curiosity, spark meaningful
               conversations, and highlight ideas that can drive positive change.
@@ -247,15 +252,27 @@ export default function Home() {
               thinking. TEDxCIS is not only about the talks on stage. It’s also
               about the connections built around them. Attendees can meet the
               speakers, join discussions, and connect with others who care about
-              making an impact.
-            </p>
+              making an impact."
+              className="text-lg max-w-4xl mb-8 text-gray-700 leading-relaxed transition-all duration-1000 animate-fade-in-up"
+            delay={100}
+            duration={0.9}
+            ease="power3.out"
+            splitType="lines"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            rootMargin="-100px"
+            textAlign="center"
+            >
+              
+            </SplitText>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer speed={0.5}>
           <div className="relative bg-[url('/mariamma.JPG')] flex-col bg-cover bg-center rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group flex items-start justify-center">
           
-          <p className="text-gray-200 tracking-tighter leading-[1.1] font-bold p-4 px-8 mb-50 text-[125px]">Location: <br/>The Mariamma Varkey <br/> Auditorium</p>
+          <p className="text-gray-200 tracking-tighter leading-[1.1] font-bold p-4 px-8 mb-50 text-[125px]">Location:<br/>The Mariamma Varkey <br/> Auditorium</p>
 
           </div>
         </ParallaxLayer>
