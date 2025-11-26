@@ -7,6 +7,7 @@ import {
 } from "./components/ParallaxContainer";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollReveal from "./components/ScrollReveal";
 
 function AnimatedLogo({ className }: { className?: string }) {
   return (
@@ -147,7 +148,9 @@ const SpeakerArray = ({
 }) => {
   return (
     <div className="w-full min-h-50 shadow-2xl py-4 overflow-x-auto whitespace-nowrap mb-10 animate-fade-in-up rounded-2xl">
-      <h1 className="text-red-500 text-4xl p-4 mx-8 font-bold text-center">{heading}</h1>
+      <h1 className="text-red-500 text-4xl p-4 mx-8 font-bold text-center">
+        {heading}
+      </h1>
       {speakers.map((speaker, index) => (
         <div
           key={speaker.id}
@@ -218,9 +221,9 @@ export default function Home() {
         </ParallaxLayer>
 
         <ParallaxLayer speed={0.8}>
-          <div className="text-center w-full text-black flex items-center justify-center flex-col mx-auto rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-105 transition-all duration-500 animate-fade-in-up">
+          <div className="text-center w-8xl text-black flex items-center justify-center flex-col rounded-3xl my-16 p-12 bg-linear-to-br from-white via-red-50 to-gray-50 shadow-2xl hover:shadow-red-200 border-gray-200 hover:scale-101 transition-all duration-500 animate-fade-in-up">
             <h1
-              className="text-6xl font-bold text-center py-8 bg-linear-to-r from-gray-900 via-red-700 to-black bg-clip-text text-transparent transition-all duration-1000 animate-fade-in-up"
+              className="text-8xl font-bold text-center py-8 bg-linear-to-r from-gray-900 via-red-700 to-black bg-clip-text text-transparent transition-all duration-1000 animate-fade-in-up"
               style={{ animationDelay: "200ms" }}
             >
               What is TEDxCIS Dubai?
@@ -229,25 +232,31 @@ export default function Home() {
               className="text-lg max-w-4xl mb-8 text-gray-700 leading-relaxed transition-all duration-1000 animate-fade-in-up"
               style={{ animationDelay: "400ms" }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              congue rutrum urna at malesuada. Praesent laoreet tincidunt tellus
-              ac porta. Sed consequat, odio sit amet iaculis laoreet, enim orci
-              convallis elit, vitae scelerisque lectus eros sit amet mi. Donec
-              dictum tortor sit amet consequat iaculis. Suspendisse nunc erat,
-              porta vitae dolor vitae, fermentum imperdiet magna. Cras id
-              molestie augue. In molestie luctus felis, in sagittis lacus
-              interdum at. Fusce sagittis vel tellus et accumsan. Integer
-              rhoncus, lorem non elementum porttitor, mauris tortor egestas
-              ligula, et dapibus turpis enim at lorem. Etiam at gravida arcu,
-              vel mattis ante. Suspendisse potenti. Curabitur odio nisi,
-              imperdiet sed risus nec, luctus volutpat erat.
+              TEDxCIS is an independently organized TEDx event designed to bring
+              the TED spirit of “ideas worth spreading” into the CIS community.
+              Its goal is simple: inspire curiosity, spark meaningful
+              conversations, and highlight ideas that can drive positive change.
+              Although it follows TED’s official guidelines and uses a free
+              license from TED, the event is fully run by members of the local
+              CIS community. At TEDxCIS, speakers share original talks on a wide
+              range of topics like science, technology, social issues,
+              creativity, personal growth, and global perspectives. Each talk is
+              chosen and shaped to be genuine, thought-provoking, and aligned
+              with the event’s theme. The aim is to create a space where people
+              feel encouraged to question, learn, and explore new ways of
+              thinking. TEDxCIS is not only about the talks on stage. It’s also
+              about the connections built around them. Attendees can meet the
+              speakers, join discussions, and connect with others who care about
+              making an impact.
             </p>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer speed={0.5}>
-          <div className="relative bg-[url('/pic.JPG')] bg-cover bg-center min-h-screen rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group">
-            <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="relative bg-[url('/mariamma.JPG')] flex-col bg-cover bg-center rounded-3xl shadow-2xl border-white animate-fade-in mt-16 overflow-hidden group flex items-start justify-center">
+          
+          <p className="text-gray-200 tracking-tighter leading-[1.1] font-bold p-4 px-8 mb-50 text-[125px]">Location: <br/>The Mariamma Varkey <br/> Auditorium</p>
+
           </div>
         </ParallaxLayer>
 

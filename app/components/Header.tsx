@@ -57,7 +57,7 @@ export default function Header() {
             <Bars3Icon className="w-6 h-6 text-gray-800" />
           </button>
 
-          <div className="px-4 cursor-pointer">
+          <div className="px-4 cursor-pointer mt-2">
             <Image
               src="/united-arab-emirates.png"
               width={30}
