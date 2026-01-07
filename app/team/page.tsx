@@ -26,10 +26,10 @@ const leads: TeamMember[] = [
   },
   {
     id: 2,
-    name: "Joel Muthukattil",
+    name: "Joel Francis Muthukattil",
     role: "Lead Organizer",
     longDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
+      "In a world of reels, reactions and scrolling, powerful oratory is quietly fading.\nTEDxCIS brings it back to life.\nAs Lead Organizer and Innovation Coordinator, my vision, strongly supported by the school management, is to put student voices, skills and ideas centre stage.\nThis is where confidence meets creativity, stories spark change and ideas find courage.\nCome for the talks, stay for the inspiration, leave ready to change the world.",
     photo: "/joel.JPG",
   },
   {
