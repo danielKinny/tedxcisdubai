@@ -18,7 +18,7 @@ export default function Header() {
       <div className="grid grid-cols-[auto_1fr_auto] items-center px-2 md:px-4">
         <div className="flex items-center gap-2 md:gap-3 animate-fade-in-left">
           <a
-            href="#"
+            href="/"
             className="inline-flex items-baseline ml-1 md:ml-4 hover:scale-105 transition-transform duration-300"
           >
             <Image
