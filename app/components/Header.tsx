@@ -77,7 +77,7 @@ export default function Header() {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://forms.gle/gcMBxQGmNwKZENMd7"
+            href="https://forms.gle/LAVPJhwdrAvekPSVA"
             className="hidden md:inline-block ml-2 mr-2 lg:mr-8 uppercase hover:scale-105 transition-all duration-300 bg-linear-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-xs lg:text-md font-bold px-3 lg:px-6 py-2 lg:py-4 rounded-xl shadow-lg hover:shadow-xl"
           >
             <ArrowTopRightOnSquareIcon className="inline-block w-4 lg:w-5 h-4 lg:h-5 mr-1 lg:mr-2 -mt-1" />
