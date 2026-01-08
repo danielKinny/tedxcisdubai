@@ -44,6 +44,12 @@
 
 body {
   font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Prevent horizontal scroll on mobile */
+html {
+  overflow-x: hidden;
 }
 
 /* Smooth scrolling */
@@ -259,5 +265,26 @@ html {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Prevent text overflow */
+  h1, h2, h3, h4, h5, h6, p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
+  /* Fix video width on mobile */
+  video {
+    max-width: 100%;
+    height: auto;
   }
 }

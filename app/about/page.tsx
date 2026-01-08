@@ -28,10 +28,10 @@ export default function About() {
       <Header />
 
       <ParallaxLayer speed={0.5} maxOffset={320}>
-        <div className="text-white text-9xl font-extrabold text-center w-full h-[300px] object-fit flex items-center justify-center bg-[url('/pic.JPG')] bg-cover bg-center mb-16">
+        <div className="text-white text-4xl md:text-7xl lg:text-9xl font-extrabold text-center w-full h-[200px] md:h-[300px] object-fit flex items-center justify-center bg-[url('/pic.JPG')] bg-cover bg-center mb-8 md:mb-16">
           <SplitText
             text="OUR STORY"
-            className="text-9xl font-bold text-center"
+            className="text-4xl md:text-7xl lg:text-9xl font-bold text-center"
             delay={400}
             duration={0.6}
             ease="power3.out"
@@ -46,10 +46,10 @@ export default function About() {
       </ParallaxLayer>
 
       <ParallaxLayer speed={0.3} maxOffset={280}>
-        <div className="bg-white hover:scale-102 transition-transform rounded-3xl shadow-2xl p-12 my-16 border border-gray-200 animate-fade-in-up max-w-5xl mx-auto">
+        <div className="bg-white hover:scale-102 transition-transform rounded-3xl shadow-2xl p-6 md:p-12 my-8 md:my-16 mx-4 md:mx-auto border border-gray-200 animate-fade-in-up max-w-5xl">
           <SplitText
             text="Our Manifesto"
-            className="text-4xl text-center text-black font-bold mb-8"
+            className="text-2xl md:text-4xl text-center text-black font-bold mb-6 md:mb-8"
             tag="h1"
             delay={400}
             duration={1}
@@ -81,7 +81,7 @@ Today, TEDxCIS remains a fully student-led effort, driven by passion, leadership
       </ParallaxLayer>
 
       <ParallaxLayer speed={0.7} maxOffset={360}>
-        <div className="grid grid-cols-2 p-8 border border-black max-w-8xl rounded-2xl my-16  mx-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 p-4 md:p-8 border border-black max-w-8xl rounded-2xl my-8 md:my-16 mx-4 md:mx-8 lg:mx-16">
           {metad.map((card) => (
             <div
               className="hover:scale-105 duration-300 transition-transform flex flex-col items-center justify-start"
@@ -89,7 +89,7 @@ Today, TEDxCIS remains a fully student-led effort, driven by passion, leadership
             >
               <SplitText
                 text={card.title}
-                className="text-black text-center text-5xl font-bold mb-2"
+                className="text-black text-center text-3xl md:text-5xl font-bold mb-2"
                 delay={400}
                 duration={0.6}
                 ease="power3.out"
@@ -102,14 +102,14 @@ Today, TEDxCIS remains a fully student-led effort, driven by passion, leadership
               />
               <Image
                 src={card.image}
-                className="mx-auto rounded-lg h-96 w-150 object-cover"
+                className="mx-auto rounded-lg h-48 md:h-64 lg:h-96 w-full object-cover"
                 width={350}
                 height={300}
                 alt={card.title}
               />
               <SplitText
                 text={card.desc}
-                className="text-black text-center max-w-2/3 mx-auto text-lg py-4"
+                className="text-black text-center max-w-2/3 mx-auto text-sm md:text-lg py-4"
                 delay={100}
                 duration={0.6}
                 ease="power3.out"

@@ -13,18 +13,19 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
   return (
-    <header className="bg-white/10 backdrop-blur-xl py-4 animate-fade-in-down z-10 sticky top-0 border-b border-gray-200 shadow-sm">
-      <div className="grid grid-cols-[auto_1fr_auto] items-center px-4">
-        <div className="flex items-center gap-3 animate-fade-in-left">
+    <header className="bg-white/10 backdrop-blur-xl py-2 md:py-4 animate-fade-in-down z-10 sticky top-0 border-b border-gray-200 shadow-sm">
+      <div className="grid grid-cols-[auto_1fr_auto] items-center px-2 md:px-4">
+        <div className="flex items-center gap-2 md:gap-3 animate-fade-in-left">
           <a
             href="#"
-            className="inline-flex items-baseline ml-4 hover:scale-105 transition-transform duration-300"
+            className="inline-flex items-baseline ml-1 md:ml-4 hover:scale-105 transition-transform duration-300"
           >
             <Image
               src="/logo-black.png"
               width={180}
               height={180}
               alt="logo"
+              className="w-24 md:w-32 lg:w-[180px] h-auto"
             />
           </a>
         </div>
@@ -57,15 +58,16 @@ export default function Header() {
             <Bars3Icon className="w-6 h-6 text-gray-800" />
           </button>
 
-          <div className="px-4 cursor-pointer mt-2">
+          <div className="px-2 md:px-4 cursor-pointer mt-2">
             <Image
               src="/united-arab-emirates.png"
               width={30}
               height={30}
               alt="Some image"
+              className="w-6 md:w-[30px] h-auto mx-auto"
             />
             <div>
-              <p className="text-black text-center">
+              <p className="text-black text-center text-xs md:text-sm">
                 AE
               </p>
             </div>
@@ -75,16 +77,16 @@ export default function Header() {
             rel="noreferrer"
             target="_blank"
             href="https://forms.gle/gcMBxQGmNwKZENMd7"
-            className="hidden md:inline-block ml-2 mr-8 uppercase hover:scale-105 transition-all duration-300 bg-linear-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-md font-bold px-6 py-4 rounded-xl shadow-lg hover:shadow-xl"
+            className="hidden md:inline-block ml-2 mr-2 lg:mr-8 uppercase hover:scale-105 transition-all duration-300 bg-linear-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-xs lg:text-md font-bold px-3 lg:px-6 py-2 lg:py-4 rounded-xl shadow-lg hover:shadow-xl"
           >
-            <ArrowTopRightOnSquareIcon className="inline-block w-5 h-5 mr-2 -mt-1" />
+            <ArrowTopRightOnSquareIcon className="inline-block w-4 lg:w-5 h-4 lg:h-5 mr-1 lg:mr-2 -mt-1" />
             REGISTRATION
           </a>
         </div>
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 z-50 bg-linear-to-br from-white via-gray-50 to-red-50 p-6 overflow-auto animate-fade-in">
+        <div className="md:hidden fixed inset-0 z-50 bg-linear-to-br from-white via-gray-50 to-red-50 p-4 md:p-6 overflow-auto animate-fade-in">
           <div className="flex items-center justify-between animate-fade-in-down">
             <a href="#" className="inline-flex items-center">
               <Image
@@ -92,6 +94,7 @@ export default function Header() {
                 width={120}
                 height={120}
                 alt="logo"
+                className="w-20 md:w-[120px] h-auto"
               />
             </a>
             <button
@@ -99,12 +102,12 @@ export default function Header() {
               aria-label="Close menu"
               className="p-2 cursor-pointer hover:scale-110 transition-transform duration-300"
             >
-              <XMarkIcon className="w-7 h-7 text-gray-800" />
+              <XMarkIcon className="w-6 h-6 md:w-7 md:h-7 text-gray-800" />
             </button>
           </div>
 
           <nav className="mt-8">
-            <ul className="flex flex-col gap-6 uppercase text-xl tracking-wider">
+            <ul className="flex flex-col gap-6 uppercase text-lg md:text-xl tracking-wider">
               {NAV_LINKS.map((label, index) => (
                 <li key={label.name} className="animate-fade-in-left" style={{ animationDelay: `${index * 100 + 200}ms` }}>
                   <a
@@ -122,7 +125,7 @@ export default function Header() {
               rel="noreferrer"
               target="_blank"
               href="https://forms.gle/gcMBxQGmNwKZENMd7"
-              className="mt-8 inline-block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-3 rounded-2xl transition-all duration-300 hover:scale-105 animate-fade-in-up"
+              className="mt-8 inline-block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-3 rounded-2xl transition-all duration-300 hover:scale-105 animate-fade-in-up text-sm md:text-base"
               style={{ animationDelay: '700ms' }}
               onClick={() => setMobileOpen(false)}
             >

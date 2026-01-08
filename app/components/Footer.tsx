@@ -4,8 +4,8 @@ const stripes = Array.from({ length: 6 });
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-red-500 bg-white text-gray-700">
-      <div className="mx-18 flex w-full flex-col gap-12 px-4 py-12 sm:px-6 lg:px-8">
+    <footer className="mt-8 md:mt-16 border-t border-red-500 bg-white text-gray-700">
+      <div className="mx-auto flex w-full flex-col gap-8 md:gap-12 px-4 py-8 md:py-12 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
           <div className="flex items-center gap-4">
             <Image
@@ -13,7 +13,7 @@ export default function Footer() {
               width={140}
               height={140}
               alt="TEDxCIS Dubai logo"
-              className="h-16 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
             <div>
               
@@ -68,12 +68,12 @@ export default function Footer() {
                   placeholder="john@example.com"
                 />
               </div>
-              <button
-                type="button"
+              <a
+                href=""
                 className="w-full rounded-full hover:scale-104 transition-all cursor-pointer bg-red-600 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white hover:bg-red-700"
               >
                 Register
-              </button>
+              </a>
             </form>
           </div>
 
