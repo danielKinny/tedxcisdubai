@@ -13,6 +13,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
   return (
+    <>
     <header className="bg-white/10 backdrop-blur-xl py-2 md:py-4 animate-fade-in-down z-10 sticky top-0 border-b border-gray-200 shadow-sm">
       <div className="grid grid-cols-[auto_1fr_auto] items-center px-2 md:px-4">
         <div className="flex items-center gap-2 md:gap-3 animate-fade-in-left">
@@ -84,6 +85,7 @@ export default function Header() {
           </a>
         </div>
       </div>
+    </header>
 
       {mobileOpen && (
         <div className="md:hidden fixed inset-0 z-50 bg-linear-to-br from-white via-gray-50 to-red-50 p-4 md:p-6 overflow-auto animate-fade-in">
@@ -134,6 +136,6 @@ export default function Header() {
           </nav>
         </div>
       )}
-    </header>
+    </>
   );
 }

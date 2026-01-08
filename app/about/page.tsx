@@ -81,7 +81,7 @@ Today, TEDxCIS remains a fully student-led effort, driven by passion, leadership
       </ParallaxLayer>
 
       <ParallaxLayer speed={0.7} maxOffset={360}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 p-4 md:p-8 border border-black max-w-8xl rounded-2xl my-8 md:my-16 mx-4 md:mx-8 lg:mx-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 p-4 md:p-8 gap-12 py-12 border border-black max-w-8xl rounded-2xl my-8 md:my-16 mx-4 md:mx-8 lg:mx-16">
           {metad.map((card) => (
             <div
               className="hover:scale-105 duration-300 transition-transform flex flex-col items-center justify-start"

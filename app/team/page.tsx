@@ -229,7 +229,7 @@ const TeamPage = () => {
       </ParallaxLayer>
 
       <ParallaxLayer speed={0.7}>
-        <div className="grid grid-cols-3 shadow-2xl mx-24 p-8 gap-12 my-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 shadow-2xl mx-4 md:mx-12 lg:mx-24 p-4 md:p-8 gap-6 md:gap-12 my-8 md:my-16">
           {leads.map((member) => (
             <TeamCard
               key={member.id}
@@ -253,7 +253,7 @@ const TeamPage = () => {
       </ParallaxLayer>
 
       <ParallaxLayer speed={0.7}>
-        <div className="grid grid-cols-3 shadow-2xl mx-24 p-8 gap-12 my-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 shadow-2xl mx-4 md:mx-12 lg:mx-24 p-4 md:p-8 gap-6 md:gap-12 my-8 md:my-16">
           {thirdRow.map((member) => (
             <TeamCard
               key={member.id}
