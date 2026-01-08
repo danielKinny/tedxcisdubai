@@ -206,7 +206,7 @@ const TeamPage = () => {
     <ParallaxContainer className="min-h-screen bg-linear-to-b from-white via-gray-50 to-white">
       <Header />
 
-      <div className="w-full backdrop-filter backdrop-blur-sm bg-[url('/team.png')] bg-cover bg-center h-[200px] md:h-[500px] flex items-center justify-center mb-8 md:mb-16">
+      <div className="w-12/13 mx-auto rounded-2xl backdrop-filter backdrop-blur-sm bg-[url('/team.png')] bg-cover bg-center h-[200px] md:h-[500px] flex items-center justify-center mb-8 md:mb-16">
         <div className="absolute inset-0 bg-black/10 flex text-center justify-center items-center px-4">
 
         </div>

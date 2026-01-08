@@ -18,7 +18,7 @@ const metad: { title: string; image: string; desc: string }[] = [
   {
     title: "2025",
     image: "/2025.JPG",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at aliquet odio. In hac habitasse platea dictumst. Vivamus eget nisl nisl. Ut nibh diam, pharetra sed dapibus quis, consectetur nec massa. Suspendisse sodales lectus ut porttitor ultricies. Nunc faucibus consectetur justo, ac placerat tortor tristique sit amet. Nullam non viverra tortor. Nunc aliquet, lorem vitae elementum porta, ante nibh gravida enim, eget sodales odio turpis nec purus. Ut id hendrerit nunc. Integer luctus enim turpis. Vestibulum sit amet nunc non felis viverra pharetra vel at ligula. Maecenas consectetur malesuada nisi, et commodo velit. ",
+    desc: "TEDxCIS Dubai 2025 was a powerful continuation of our school's tradition of celebrating ideas and dialogue. Under the theme Innate. Innovate. Intonate., the event explored how ideas are formed, developed, and ultimately shared. The theme encouraged speakers to reflect on what is instinctive and natural within us, how those instincts can evolve into innovation, and how ideas gain meaning when they are voiced with purpose. Innate focused on the abilities, instincts, and perspectives we are born with — the quiet drivers that shape who we are and how we think. Innovate examined how these innate qualities can be transformed into new ways of thinking, problem-solving, and creating change. Intonate emphasised the importance of expression, highlighting how ideas must be communicated thoughtfully in order to resonate, inspire reflection, and spark discussion.",
   },
 ];
 

@@ -15,15 +15,13 @@ export default function Footer() {
               alt="TEDxCIS Dubai logo"
               className="h-12 md:h-16 w-auto"
             />
-            <div>
-              
-            </div>
+            <div></div>
           </div>
         </div>
 
         <p className="text-xs uppercase tracking-[0.35em] text-red-600">
-                Ideas Worth Spreading
-              </p>
+          Ideas Worth Spreading
+        </p>
         <div className="space-y-2">
           {stripes.map((_, index) => (
             <div
@@ -69,7 +67,7 @@ export default function Footer() {
                 />
               </div>
               <a
-                href=""
+                href="https://forms.gle/LAVPJhwdrAvekPSVA"
                 className="w-full rounded-full hover:scale-104 transition-all cursor-pointer bg-red-600 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white hover:bg-red-700"
               >
                 Register
