@@ -87,7 +87,7 @@ export default function Footer() {
               TEDxCIS Dubai to life.
             </p>
             <a
-              href="https://youtube.com/"
+              href="https://forms.gle/1VfBCQcHi1SDkqyW9"
               className="mt-4 inline-block w-full text-center hover:scale-104 duration-300 transition-transform font-semibold bg-red-500 text-white p-4 rounded-2xl"
             >
               Volunteer Here
