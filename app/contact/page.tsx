@@ -116,9 +116,8 @@ export default function Contact() {
                                     className="mt-2 w-full rounded-xl border border-gray-300 px-4 py-3 bg-white focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500/30"
                                 >
                                     <option>Speaking at TEDxCIS</option>
-                                    <option>Sponsorship & Partnerships</option>
+                                    <option>Viewer Registration</option>
                                     <option>Volunteer Opportunities</option>
-                                    <option>Press & Media</option>
                                     <option>General Inquiry</option>
                                 </select>
                             </div>
