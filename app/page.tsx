@@ -104,61 +104,61 @@ const internalSpeakers: Speaker[] = [
   {
     id: 1,
     name: "Paresh Bharadwaj",
-    href: "/null.jpg",
+    href: "/speaker/paresh.JPG",
   },
   {
     id: 2,
     name: "Mahdi Insaf",
-    href: "/null.jpg",
+    href: "/speaker/mahdi.JPG",
   },
   {
     id: 3,
     name: "Anaaya Anil",
-    href: "/null.jpg",
+    href: "/speaker/anaaya.JPG",
   },
   {
     id: 4,
     name: "Dhiya Somaia",
-    href: "/null.jpg",
+    href: "/speaker/dhiya.JPG",
   },
   {
     id: 5,
     name: "Hridik Misra",
-    href: "/null.jpg",
+    href: "/speaker/hridik.JPG",
   },
   {
     id: 6,
     name: "Poorvika Vickraman",
-    href: "/null.jpg",
+    href: "/speaker/poorvika.JPG",
   },
   {
     id: 7,
     name: "Raunak Ramesh",
-    href: "/null.jpg",
+    href: "/speaker/raunak.JPG",
   },{
     id: 8,
     name: "Sahana Ganesh",
-    href: "/null.jpg",
+    href: "/speaker/sahana.JPG",
   },
   {
     id: 9,
     name: "Sagar Tejwani",
-    href: "/null.jpg",
+    href: "/speaker/sagar.jpeg",
   },
   {
     id: 10,
     name: "Kartika Nair",
-    href: "/null.jpg",
+    href: "/speaker/kartika.JPG",
   },
   {
     id: 11,
     name: "Lina Ismail Maged",
-    href: "/null.jpg",
+    href: "/speaker/lina.JPG",
   },
   {
     id: 12,
     name: "SP Roy",
-    href: "/null.jpg",
+    href: "/speaker/sproy.jpeg",
   },
 ];
 
