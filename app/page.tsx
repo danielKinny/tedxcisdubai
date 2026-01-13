@@ -70,6 +70,7 @@ export interface Speaker {
   id: number;
   name: string;
   href: string;
+  longDesc: string;
 }
 
 const externalSpeakers: Speaker[] = [
@@ -77,26 +78,31 @@ const externalSpeakers: Speaker[] = [
     id: 1,
     name: "placeholder",
     href: "/null.jpg",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 2,
     name: "placeholder",
     href: "/null.jpg",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 3,
     name: "placeholder",
     href: "/null.jpg",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 4,
     name: "placeholder",
     href: "/null.jpg",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 5,
     name: "placeholder",
     href: "/null.jpg",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
 ];
 
@@ -105,77 +111,94 @@ const internalSpeakers: Speaker[] = [
     id: 1,
     name: "Paresh Bharadwaj",
     href: "/speaker/paresh.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 2,
     name: "Mahdi Insaf",
     href: "/speaker/mahdi.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 3,
     name: "Anaaya Anil",
-    href: "/speaker/anaaya.JPG",
+    href: "/null.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 4,
     name: "Dhiya Somaia",
     href: "/speaker/dhiya.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 5,
     name: "Hridik Misra",
     href: "/speaker/hridik.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 6,
     name: "Poorvika Vickraman",
-    href: "/speaker/poorvika.JPG",
+    href: "/null.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 7,
     name: "Raunak Ramesh",
     href: "/speaker/raunak.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },{
     id: 8,
-    name: "Sahana Ganesh",
-    href: "/speaker/sahana.JPG",
+    name: "Souparnika Menon",
+    href: "/speaker/souparnika.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 9,
     name: "Sagar Tejwani",
-    href: "/speaker/sagar.jpeg",
+    href: "/null.jpg",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 10,
     name: "Kartika Nair",
-    href: "/speaker/kartika.JPG",
+    href: "/null.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 11,
     name: "Lina Ismail Maged",
     href: "/speaker/lina.JPG",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 12,
     name: "SP Roy",
     href: "/speaker/sproy.jpeg",
+    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
 ];
 
 const SpeakerArray = ({
   speakers,
+  onSelect,
 }: {
   speakers: Speaker[];
   label: string;
+  onSelect: (speaker: Speaker) => void;
 }) => {
   return (
     <div className="w-full shadow-2xl py-6 md:py-8 px-4 md:px-6 mb-6 md:mb-10 animate-fade-in-up rounded-2xl bg-white/70">
       <div className="grid gap-6 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {speakers.map((speaker, index) => (
-          <div
+          <button
+            type="button"
             key={speaker.id}
-            className="flex flex-col items-center hover:scale-105 transition-all duration-500 animate-fade-in-up group"
+            onClick={() => onSelect(speaker)}
+            className="flex flex-col items-center hover:scale-105 transition-all duration-500 animate-fade-in-up group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-2xl"
             style={{ animationDelay: `${index * 100}ms` }}
+            aria-label={`View more about ${speaker.name}`}
           >
             <div className="relative overflow-hidden rounded-2xl shadow-xl w-full aspect-square group-hover:shadow-2xl group-hover:shadow-red-200 transition-all duration-300">
               <Image
@@ -190,7 +213,7 @@ const SpeakerArray = ({
             <p className="text-center text-gray-800 mt-3 md:mt-4 text-lg md:text-xl font-semibold">
               {speaker.name}
             </p>
-          </div>
+          </button>
         ))}
       </div>
     </div>
@@ -201,6 +224,7 @@ export default function Home() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const [selectedSpeaker, setSelectedSpeaker] = useState<Speaker | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -214,6 +238,23 @@ export default function Home() {
       if (vid) vid.play().catch(() => {});
     }
   }, [loading]);
+
+  useEffect(() => {
+    if (!selectedSpeaker) {
+      return;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSelectedSpeaker(null);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [selectedSpeaker]);
+
+  const closeModal = () => setSelectedSpeaker(null);
 
   return loading ? (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -308,12 +349,59 @@ export default function Home() {
             <SpeakerArray
               speakers={internalSpeakers}
               label="Internal"
+              onSelect={setSelectedSpeaker}
             />
           </div>
         </ParallaxLayer>
       </main>
 
       <Footer />
+
+      {selectedSpeaker && (
+        <div className="fixed inset-0 z-50 flex items-center bg-black/80 backdrop-blur-sm p-4">
+          <div className="relative mx-auto w-full max-w-7xl max-h-[90vh] overflow-hidden rounded-2xl md:rounded-3xl bg-white/95 shadow-2xl">
+            <button
+              type="button"
+              onClick={closeModal}
+              className="absolute top-4 cursor-pointer right-4 z-20 rounded-full bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-lg transition hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+              aria-label="Close speaker details"
+            >
+              Close
+            </button>
+
+            <div className="flex h-full flex-col gap-4 md:gap-6 overflow-hidden p-4 md:p-6 md:flex-row">
+              <div className="relative w-full overflow-hidden rounded-2xl bg-black md:w-1/2">
+                <Image
+                  src={selectedSpeaker.href}
+                  alt={`${selectedSpeaker.name} portrait`}
+                  width={600}
+                  height={800}
+                  className="h-full w-full object-cover"
+                  priority
+                />
+              </div>
+
+              <div className="flex-1 overflow-y-auto rounded-2xl bg-white/90 p-6">
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-2">
+                    <span className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">
+                      Speaker
+                    </span>
+                    <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+                      {selectedSpeaker.name}
+                    </h3>
+                  </div>
+                  <p className="text-lg leading-relaxed text-gray-700 whitespace-pre-line">
+                    {selectedSpeaker.longDesc}
+                  </p>
+                  <div className="h-px bg-linear-to-r from-red-500/60 via-red-500/20 to-transparent" />
+                  <div className="grid gap-4 text-sm text-gray-500 sm:grid-cols-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </ParallaxContainer>
   );
 }
