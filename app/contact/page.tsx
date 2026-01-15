@@ -2,19 +2,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import React from "react";
-
-const contactDetails = [
-    {
-        title: "Email",
-        value: "tedxcisdubai@gmail.com",
-        description: "Reach out for partnerships, press, or general questions."
-    },
-    {
-        title: "Location",
-        value: "Cambridge International School, Dubai",
-        description: "Find us on campus or arrange a visit by appointment."
-    }
-];
+import {contactDetails} from "../../lib/data";
 
 export default function Contact() {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
