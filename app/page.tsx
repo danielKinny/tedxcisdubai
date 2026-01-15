@@ -157,13 +157,13 @@ const internalSpeakers: Speaker[] = [
   {
     id: 9,
     name: "Sagar Tejwani",
-    href: "/null.jpg",
+    href: "/speaker/sagar.jpg",
     longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
     id: 10,
     name: "Kartika Nair",
-    href: "/null.JPG",
+    href: "/speaker/kartika.JPG",
     longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
@@ -190,21 +190,21 @@ const SpeakerArray = ({
 }) => {
   return (
     <div className="w-full shadow-2xl py-6 md:py-8 px-4 md:px-6 mb-6 md:mb-10 animate-fade-in-up rounded-2xl bg-white/70">
-      <div className="grid gap-6 md:gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid gap-6 md:gap-10 md:gap-y-15 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {speakers.map((speaker, index) => (
           <button
             type="button"
             key={speaker.id}
             onClick={() => onSelect(speaker)}
-            className="flex flex-col items-center hover:scale-105 transition-all duration-500 animate-fade-in-up group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-2xl"
+            className="flex flex-col items-center hover:scale-105 transition-all duration-500 animate-fade-in-up group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-2xl "
             style={{ animationDelay: `${index * 100}ms` }}
             aria-label={`View more about ${speaker.name}`}
           >
-            <div className="relative overflow-hidden rounded-2xl shadow-xl w-full aspect-square group-hover:shadow-2xl group-hover:shadow-red-200 transition-all duration-300">
+            <div className="relative overflow-hidden rounded-2xl shadow-xl w-full aspect-3/4 group-hover:shadow-2xl group-hover:shadow-red-200 transition-all duration-300">
               <Image
                 src={`${speaker.href}`}
                 width={300}
-                height={300}
+                height={400}
                 alt={speaker.name}
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
               />
