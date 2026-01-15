@@ -61,7 +61,7 @@ export default function Header() {
 
           <div className="px-2 md:px-4 cursor-pointer mt-2">
             <Image
-              src="/united-arab-emirates.png"
+              src="/assets/united-arab-emirates.png"
               width={30}
               height={30}
               alt="Some image"
