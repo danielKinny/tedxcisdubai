@@ -193,7 +193,7 @@ export const speakers: Speaker[] = [
   {
     id: 3,
     name: "Anaaya Anil",
-    href: "/assets/null.JPG",
+    href: "/speaker/anaaya.jpg",
     longDesc: "I'm Anaaya Anil, a 14-year-old student at a Cambridge International School. I'm from India. I enjoy reading, listening to music, and playing volleyball, which helps me stay disciplined and balanced. I'm hardworking, I manage my time effectively, and I am confident in communicating my ideas in both academic and group settings. I like observing people and understanding how they think, which sparked my interest in psychology and mental health. This interest has led me to aspire to become a psychiatrist in the future. As a student, I focus on learning consistently and improving myself through both academics and extracurricular activities.",
   },
   {
@@ -211,7 +211,7 @@ export const speakers: Speaker[] = [
   {
     id: 6,
     name: "Poorvikaa Vickraman",
-    href: "/assets/null.JPG",
+    href: "/speaker/poorvikaa.jpg",
     longDesc: "Hello Everyone! Born in the beautiful state of Tamil Nadu, I am Poorvikaa Vickraman, a year 11 student from CIS Dubai. My personality is built upon values of honesty, straightforwardness, and care for everyone. I love learning new things a lot and always get excited to discover different aspects of life. My main interests revolve around public speaking, debating, dancing, reading, martial arts, and basketball. I have done multiple MUNs, where I have won several of them as well. I find joy in sports since I believe that learning a sport teaches many values like teamwork, resilience, hard work, and respect. So any sport you might want to try, count me in! I enjoy studying as well, since it makes me feel like I can accomplish a lot of things with less struggle, and I yearn for the power of knowledge. I've always wondered how planes and birds fly; therefore, I aspire to be an Aeronautical Engineer so that one day I can contribute to people discovering this world from a different altitude.",
   },
   {
