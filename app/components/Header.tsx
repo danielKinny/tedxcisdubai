@@ -22,7 +22,7 @@ export default function Header() {
             className="inline-flex items-baseline ml-1 md:ml-4 hover:scale-105 transition-transform duration-300"
           >
             <Image
-              src="/logo-black.png"
+              src="/assets/logo-black.png"
               width={180}
               height={180}
               alt="logo"
@@ -92,7 +92,7 @@ export default function Header() {
           <div className="flex items-center justify-between animate-fade-in-down">
             <a href="#" className="inline-flex items-center">
               <Image
-                src="/logo-black.png"
+                src="/assets/logo-black.png"
                 width={120}
                 height={120}
                 alt="logo"

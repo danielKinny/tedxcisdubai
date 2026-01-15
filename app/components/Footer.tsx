@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
           <div className="flex items-center gap-4">
             <Image
-              src="/logo-black.png"
+              src="/assets/logo-black.png"
               width={140}
               height={140}
               alt="TEDxCIS Dubai logo"

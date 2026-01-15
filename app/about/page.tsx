@@ -12,12 +12,12 @@ import SplitText from "../components/SplitText";
 const metad: { title: string; image: string; desc: string }[] = [
   {
     title: "2024",
-    image: "/2024.JPG",
+    image: "/assets/2024.JPG",
     desc: "TEDx CIS Dubai 2024 was a landmark event, being the first TEDx after COVID-19 and the first to take place in our school’s new campus. Under the theme VIVID: Voice Inspiring Valuable Ideas and Discussion, speakers shared a vibrant range of ideas that sparked curiosity and conversation. The theme helped celebrate the power of expression and the impact that sharing ideas can have. It encouraged speakers to use their voice to inspire reflection and offer perspectives that challenge assumptions. At its core, the theme emphasized how diverse experiences and insights can create a richer understanding of the world and motivate positive action. Our speakers were phenomenal in their talks, covering a wide range of fascinating topics. From exploring personal journeys in entrepreneurship and redefining what it means to excel academically, to challenging perspectives on mental health, mathematics, law, and the meaning of happiness. The talks offered a variety of unique experiences and valuable insights. Some speakers shared how they inspired others while navigating lifelong challenges such as ADHD, autism, and other disabilities, while others encouraged reflection on the choices and dilemmas that shape our lives. Through these talks, the event created a space that challenged conventional thinking, and encouraged participants to reflect on ideas that inspire growth and creativity. TEDx 2024 successfully brought together the community that cherished curiosity and the power of sharing valuable ideas",
   },
   {
     title: "2025",
-    image: "/2025.JPG",
+    image: "/assets/2025.JPG",
     desc: "TEDxCIS Dubai 2025 was a powerful continuation of our school's tradition of celebrating ideas and dialogue. Under the theme Innate. Innovate. Intonate., the event explored how ideas are formed, developed, and ultimately shared. The theme encouraged speakers to reflect on what is instinctive and natural within us, how those instincts can evolve into innovation, and how ideas gain meaning when they are voiced with purpose. Innate focused on the abilities, instincts, and perspectives we are born with — the quiet drivers that shape who we are and how we think. Innovate examined how these innate qualities can be transformed into new ways of thinking, problem-solving, and creating change. Intonate emphasised the importance of expression, highlighting how ideas must be communicated thoughtfully in order to resonate, inspire reflection, and spark discussion.",
   },
 ];
@@ -28,7 +28,7 @@ export default function About() {
       <Header />
 
       <ParallaxLayer speed={0.5} maxOffset={320}>
-        <div className="text-white text-4xl md:text-7xl lg:text-9xl font-extrabold text-center w-full h-[200px] md:h-[300px] object-fit flex items-center justify-center bg-[url('/pic.JPG')] bg-cover bg-center mb-8 md:mb-16">
+        <div className="text-white text-4xl md:text-7xl lg:text-9xl font-extrabold text-center w-full h-[200px] md:h-[300px] object-fit flex items-center justify-center bg-[url('/assets/pic.JPG')] bg-cover bg-center mb-8 md:mb-16">
           <SplitText
             text="OUR STORY"
             className="text-4xl md:text-7xl lg:text-9xl font-bold text-center"

@@ -163,7 +163,7 @@ const internalSpeakers: Speaker[] = [
   {
     id: 10,
     name: "Kartika Nair",
-    href: "/speaker/kartika.JPG",
+    href: "/speaker/kartika.jpg",
     longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
   },
   {
@@ -277,7 +277,7 @@ export default function Home() {
               loop
               className="w-full object-cover h-auto rounded-3xl shadow-2xl border-white transition-opacity duration-1000 hover:shadow-red-200"
             >
-              <source src="/video.mp4" type="video/mp4" />
+              <source src="/assets/video.mp4" type="video/mp4" />
             </video>
           </div>
         </ParallaxLayer>
@@ -331,7 +331,7 @@ export default function Home() {
         </ParallaxLayer>
 
         <ParallaxLayer speed={0.5}>
-          <div className="relative bg-[url('/mariamma.JPG')] flex-col bg-cover bg-center rounded-3xl shadow-2xl border-white animate-fade-in mt-8 md:mt-16 overflow-hidden group flex items-start justify-center">
+          <div className="relative bg-[url('/assets/mariamma.JPG')] flex-col bg-cover bg-center rounded-3xl shadow-2xl border-white animate-fade-in mt-8 md:mt-16 overflow-hidden group flex items-start justify-center">
           
           <p className="text-gray-200 tracking-tighter leading-[1.1] font-bold p-4 px-4 md:px-8 text-3xl sm:text-5xl md:text-7xl lg:text-[125px]">Location:<br/>The Mariamma Varkey <br/> Auditorium</p>
           <p className="text-gray-300 max-w-3xl tracking-tighter leading-[1.1] p-4 px-4 md:px-8 text-base md:text-xl lg:text-3xl">The Mariamma Auditorium is CIS Dubai's 800-seat performance space, designed for assemblies, productions, music events, and community gatherings. With clear acoustics, professional lighting, and tiered seating, it delivers a polished, comfortable environment for every event.</p>
