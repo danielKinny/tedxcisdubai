@@ -230,13 +230,12 @@ export const speakers: Speaker[] = [
     id: 9,
     name: "Sagar Tejwani",
     href: "/speaker/sagar.jpg",
-    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
-  },
+    longDesc: "Hello, I am a senior professional with over 11 years of experience in regulatory compliance, investment banking, and risk management. I currently serve as Deputy MLRO and Compliance Monitoring Manager at a reputed capital firm in the UAE, where I oversee compliance strategy, regulatory adherence, and financial crime prevention frameworks. I have previously held leadership roles at First Abu Dhabi Bank and KPMG, demonstrating strong expertise in internal audit, anti-money laundering, and corporate governance. I am a recipient of multiple leadership awards and an active contributor to industry discussions and regulatory advancements. My strategic mindset and deep regulatory acumen position me as a key driver of compliance excellence within the financial services sector."
   {
     id: 10,
     name: "Kartika Nair",
     href: "/speaker/kartika.jpg",
-    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
+    longDesc: "I am a passionate teacher and a middle leader who truly enjoys spending time with students and bringing energy into the classroom through engaging and meaningful activities. I love being part of everyday moment learning, laughing, and growing alongside my students. Kindness sits at the heart of everything I do, and I believe kindness and positivity always come back to us tenfold. Beyond the classroom, I am a passionate dancer who loves expressing emotions and stories through movement. Dance is my creative outlet and a reflection of my joyful spirit. When I’m not teaching or dancing, I am a proud dog mum to my one-year-old Maltese puppy, Bruno, who fills my days with love, laughter, and endless cuddles. I strive to lead and live with warmth, positivity, and purpose, always aiming to make a meaningful difference wherever I am.",
   },
   {
     id: 11,
@@ -246,8 +245,7 @@ export const speakers: Speaker[] = [
   },
   {
     id: 12,
-    name: "SP Roy",
+    name: "Sanjeev Pradhan Roy",
     href: "/speaker/sproy.jpeg",
-    longDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit.",
-  },
-];
+    longDesc: "Hello! I am a senior talent strategist in the MENA region with over 18 years of experience, advising boards and C-suite leaders on people strategy and organizational growth. In addition to this, I am a podcaster and a regular columnist with Khaleej Times, where I share insights on leadership, careers, and the future of work. I also speak at universities and conferences across the region and actively mentor young people through youth forums, supporting the next generation of leaders."
+}];
