@@ -66,26 +66,26 @@ export default function About() {
 
       <ParallaxLayer speed={0.2} maxOffset={240}>
 
-        <div className="flex gap-5 justify-center h-100 gap-8 border rounded-2xl border-red-700 text-red-700 py-10 items-center justify-center max-w-7xl mx-auto">
+        <div className="flex gap-5 justify-center h-100 gap-8 border rounded-2xl border-black text-black py-10 items-center justify-center max-w-7xl mx-auto">
           <div className="flex flex-col items-center border p-4 border-red-700 rounded-2xl min-w-50">
             <span className="countdown font-bold text-8xl">
               <span style={{ "--value": timeLeft.days } as React.CSSProperties} aria-live="polite" aria-label={`${timeLeft.days} days`}>{timeLeft.days}</span>
             </span>
             <span className="text-2xl mt-1">days</span>
           </div>
-          <div className="flex flex-col items-center border p-4 border-red-700 rounded-2xl min-w-50">
+          <div className="flex flex-col items-center border p-4 border-black rounded-2xl min-w-50">
             <span className="countdown font-bold text-8xl">
               <span style={{ "--value": timeLeft.hours } as React.CSSProperties} aria-live="polite" aria-label={`${timeLeft.hours} hours`}>{timeLeft.hours}</span>
             </span>
             <span className="text-2xl mt-1">hours</span>
           </div>
-          <div className="flex flex-col items-center border p-4 border-red-700 rounded-2xl min-w-50">
+          <div className="flex flex-col items-center border p-4 border-black rounded-2xl min-w-50">
             <span className="countdown font-bold text-8xl">
               <span style={{ "--value": timeLeft.minutes } as React.CSSProperties} aria-live="polite" aria-label={`${timeLeft.minutes} minutes`}>{timeLeft.minutes}</span>
             </span>
             <span className="text-2xl mt-1">min</span>
           </div>
-          <div className="flex flex-col items-center border p-4 border-red-700 rounded-2xl min-w-50">
+          <div className="flex flex-col items-center border p-4 border-black rounded-2xl min-w-50">
             <span className="countdown font-bold text-8xl">
               <span style={{ "--value": timeLeft.seconds } as React.CSSProperties} aria-live="polite" aria-label={`${timeLeft.seconds} seconds`}>{timeLeft.seconds}</span>
             </span>
