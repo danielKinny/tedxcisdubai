@@ -1,14 +1,14 @@
 export const contactDetails = [
-    {
-        title: "Email",
-        value: "tedxcisdubai@gmail.com",
-        description: "Reach out for partnerships, press, or general questions."
-    },
-    {
-        title: "Location",
-        value: "Cambridge International School, Dubai",
-        description: "Find us on campus or arrange a visit by appointment."
-    }
+  {
+    title: "Email",
+    value: "tedxcisdubai@gmail.com",
+    description: "Reach out for partnerships, press, or general questions."
+  },
+  {
+    title: "Location",
+    value: "Cambridge International School, Dubai",
+    description: "Find us on campus or arrange a visit by appointment."
+  }
 ];
 
 export const metad: { title: string; image: string; desc: string }[] = [
@@ -37,8 +37,8 @@ export const leads: TeamMember[] = [
     id: 1,
     name: "Mohammed Mujtaba",
     role: "Lead Organizer",
-    longDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra posuere rutrum. Pellentesque ullamcorper eu lacus vitae varius. Phasellus ante nisl, mattis vel sagittis quis, vestibulum quis dolor. Vestibulum vehicula, dui id viverra vulputate, velit nisl egestas nisl, et dapibus massa ex eu massa. Vestibulum tellus leo, facilisis vitae tincidunt vitae, ultricies eu erat. Vivamus luctus dolor vel felis consectetur, ac volutpat nisi blandit. Curabitur vitae pharetra quam. Suspendisse nulla erat, luctus ut pharetra sit amet, bibendum sit amet neque. Curabitur aliquet egestas sem ac pharetra. Mauris sit amet nisi eget dui sagittis vestibulum sit amet a magna. ",
+      longDesc:
+        "Hello! My name is Mohammed Mujtaba and I am the Lead Organizer of TEDxCIS Dubai 2026 and previously served as Deputy Lead Organizer for the 2025 edition. Over the past few years, I’ve built a track record of leading high-impact events and driving operational improvements within each event which have helped me to serve in this capacity. In my role I have focused on 3 main pillars: Direction, Decision Making and Delegation, for which to achieve I assembled an excellent Multidisciplinary Team. TEDxCIS is something I have seen grow and I’m honored to be a part of this legacy.",
     photo: "/team/mujtaba.JPG",
   },
   {
@@ -231,7 +231,7 @@ export const speakers: Speaker[] = [
     name: "Sagar Tejwani",
     href: "/speaker/sagar.jpg",
     longDesc: "Hello, I am a senior professional with over 11 years of experience in regulatory compliance, investment banking, and risk management. I currently serve as Deputy MLRO and Compliance Monitoring Manager at a reputed capital firm in the UAE, where I oversee compliance strategy, regulatory adherence, and financial crime prevention frameworks. I have previously held leadership roles at First Abu Dhabi Bank and KPMG, demonstrating strong expertise in internal audit, anti-money laundering, and corporate governance. I am a recipient of multiple leadership awards and an active contributor to industry discussions and regulatory advancements. My strategic mindset and deep regulatory acumen position me as a key driver of compliance excellence within the financial services sector."
-  {
+  }, {
     id: 10,
     name: "Kartika Nair",
     href: "/speaker/kartika.jpg",
@@ -248,4 +248,4 @@ export const speakers: Speaker[] = [
     name: "Sanjeev Pradhan Roy",
     href: "/speaker/sproy.jpeg",
     longDesc: "Hello! I am a senior talent strategist in the MENA region with over 18 years of experience, advising boards and C-suite leaders on people strategy and organizational growth. In addition to this, I am a podcaster and a regular columnist with Khaleej Times, where I share insights on leadership, careers, and the future of work. I also speak at universities and conferences across the region and actively mentor young people through youth forums, supporting the next generation of leaders."
-}];
+  }];
