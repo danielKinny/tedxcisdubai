@@ -66,7 +66,7 @@ export default function About() {
 
       <ParallaxLayer speed={0.2} maxOffset={240}>
 
-        <div className="flex gap-5 justify-center h-100 gap-8 border rounded-2xl border-black text-black py-10 items-center justify-center max-w-7xl mx-auto">
+        <div className="flex h-100 gap-8 border rounded-2xl shadow-2xl rounded-2xl py-10 items-center justify-center max-w-7xl mx-auto">
           <div className="flex flex-col items-center border p-4 border-red-700 rounded-2xl min-w-50">
             <span className="countdown font-bold text-8xl">
               <span style={{ "--value": timeLeft.days } as React.CSSProperties} aria-live="polite" aria-label={`${timeLeft.days} days`}>{timeLeft.days}</span>
@@ -103,7 +103,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl my-10 text-2xl">
           <p className="text-4xl font-extrabold text-center">About the event</p>
           <hr className="my-4 border-t-4 border-red-700 w-80 mx-auto" />
-          <div className="gap-4 flex flex-col p-6 border border-red-700 rounded-2xl">
+          <div className="gap-4 flex flex-col p-9 rounded-2xl shadow-2xl">
             <div className="flex border-b border-red-700 py-4">
               <div className="w-1/3">
                 <CalendarIcon className="h-10 w-10 inline-block mr-2 text-red-700" />
@@ -168,7 +168,7 @@ Today, TEDxCIS remains a fully student-led effort, driven by passion, leadership
       </ParallaxLayer>
 
       <ParallaxLayer speed={0.7} maxOffset={360}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 p-4 md:p-8 gap-12 py-12 border border-black max-w-8xl rounded-2xl my-8 md:my-16 mx-4 md:mx-8 lg:mx-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 p-4 md:p-8 gap-12 py-12 shadow-2xl mt-32 max-w-8xl rounded-2xl my-8 md:my-16 mx-4 md:mx-8 lg:mx-16">
           {metad.map((card) => (
             <div
               className="hover:scale-105 duration-300 transition-transform flex flex-col items-center justify-start"
