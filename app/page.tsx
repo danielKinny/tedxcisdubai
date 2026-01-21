@@ -95,9 +95,8 @@ const SpeakerArray = ({
                 width={300}
                 height={400}
                 alt={speaker.name}
-                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                className="object-cover w-full h-full transition-transform aspect-3/4 duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-red/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <p className="text-center text-gray-800 mt-3 md:mt-4 text-lg md:text-xl font-semibold">
               {speaker.name}
@@ -247,17 +246,17 @@ export default function Home() {
 
       {selectedSpeaker && (
         <div className="fixed inset-0 z-50 flex items-center bg-black/80 backdrop-blur-sm p-4">
-          <div className="relative mx-auto w-full max-w-7xl max-h-[90vh] overflow-hidden rounded-2xl md:rounded-3xl bg-white/95 shadow-2xl">
+          <div className="relative mx-auto w-full max-w-7xl max-h-[90vh] overflow-y-auto rounded-2xl md:rounded-3xl bg-white/95 shadow-2xl">
             <button
               type="button"
               onClick={closeModal}
-              className="absolute top-4 cursor-pointer right-4 z-20 rounded-full bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-lg transition hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
+              className="sticky top-4 cursor-pointer ml-auto mr-4 z-20 rounded-full bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-lg transition hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
               aria-label="Close speaker details"
             >
               Close
             </button>
 
-            <div className="flex h-full flex-col gap-4 md:gap-6 overflow-hidden p-4 md:p-6 md:flex-row">
+            <div className="flex h-full flex-col gap-4 md:gap-6 p-4 md:p-6 md:flex-row">
               <div className="relative w-full overflow-hidden rounded-2xl bg-black md:w-1/2">
                 <Image
                   src={selectedSpeaker.href}
@@ -269,7 +268,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="flex-1 overflow-y-auto rounded-2xl bg-white/90 p-6">
+              <div className="flex-1 rounded-2xl bg-white/90 p-6">
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col gap-2">
                     <span className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">
@@ -279,7 +278,7 @@ export default function Home() {
                       {selectedSpeaker.name}
                     </h3>
                   </div>
-                  <p className="text-lg leading-relaxed text-gray-700 whitespace-pre-line">
+                  <p className="md:text-md lg:text-lg leading-relaxed text-gray-700 whitespace-pre-line">
                     {selectedSpeaker.longDesc}
                   </p>
                   <div className="h-px bg-linear-to-r from-red-500/60 via-red-500/20 to-transparent" />
