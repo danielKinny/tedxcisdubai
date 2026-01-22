@@ -47,7 +47,7 @@ export default function About() {
       <Header />
 
       <ParallaxLayer speed={0.5} maxOffset={320}>
-        <div className="text-white text-4xl md:text-7xl lg:text-9xl font-extrabold text-center rounded-2xl my-10 w-12/13 mx-auto h-[200px] md:h-[300px] object-fit flex items-center justify-center bg-[url('/assets/pic.JPG')] bg-cover bg-center mb-8 md:mb-16">
+        <div className="text-white text-4xl md:text-7xl lg:text-9xl font-extrabold text-center rounded-2xl my-10 w-49/50 mx-auto h-[200px] md:h-[300px] object-fit flex items-center justify-center bg-[url('/assets/pic.JPG')] bg-cover bg-center mb-8 md:mb-16">
           <SplitText
             text="About TEDxCIS Dubai"
             className="text-4xl md:text-7xl lg:text-8xl font-bold text-center"
@@ -66,8 +66,8 @@ export default function About() {
 
       <ParallaxLayer speed={0.2} maxOffset={240}>
 
-        <div className="flex h-100 gap-8 border rounded-2xl shadow-2xl rounded-2xl py-10 items-center justify-center max-w-7xl mx-auto">
-          <div className="flex flex-col items-center border p-4 border-red-700 rounded-2xl min-w-50">
+        <div className="flex h-100 gap-8 border rounded-2xl shadow-2xl py-10 items-center justify-center max-w-7xl mx-auto">
+          <div className="flex flex-col items-center border p-4 border-black rounded-2xl min-w-50">
             <span className="countdown font-bold text-8xl">
               <span style={{ "--value": timeLeft.days } as React.CSSProperties} aria-live="polite" aria-label={`${timeLeft.days} days`}>{timeLeft.days}</span>
             </span>
@@ -167,11 +167,11 @@ Today, TEDxCIS remains a fully student-led effort, driven by passion, leadership
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer speed={0.7} maxOffset={360}>
+      <ParallaxLayer speed={0.7} >
         <div className="grid grid-cols-1 lg:grid-cols-2 p-4 md:p-8 gap-12 py-12 shadow-2xl mt-32 max-w-8xl rounded-2xl my-8 md:my-16 mx-4 md:mx-8 lg:mx-16">
           {metad.map((card) => (
             <div
-              className="hover:scale-105 duration-300 transition-transform flex flex-col items-center justify-start"
+              className="hover:scale-105 cursor-pointer duration-300 transition-transform flex flex-col items-center justify-start"
               key={card.title}
             >
               <SplitText
